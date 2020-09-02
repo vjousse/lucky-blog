@@ -34,7 +34,7 @@ abstract class GuestLayout
             end
           end
           div class: "w-full block lg:flex lg:items-end lg:w-auto" do
-            ul class: "flex text-xl font-sans-serif align-text-bottom" do
+            ul class: "flex text-xl font-sans-serif align-text-bottom items-center" do
               li do
                 a class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900", href: "#responsive-header" do
                   text "Blog"

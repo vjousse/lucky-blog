@@ -61,7 +61,15 @@ abstract class GuestLayout
         end
 
         mount Shared::FlashMessages.new(context.flash)
-        content
+
+        main class: "container mx-auto" do
+          content
+        end
+
+        footer do
+
+        end
+
       end
     end
   end

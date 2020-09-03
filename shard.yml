@@ -2,7 +2,7 @@ name: my_app
 version: 0.1.0
 
 authors:
-  - your-name-here <your-email-here>
+  - Vincent Jousse <vincent@jousse.org>
 
 targets:
   my_app:
@@ -23,9 +23,11 @@ dependencies:
   dotenv:
     github: gdotdesign/cr-dotenv
     version: ~> 0.7.0
-  lucky_flow:
-    github: luckyframework/lucky_flow
-    version: ~> 0.7.0
   jwt:
     github: crystal-community/jwt
     version: ~> 1.4.2
+  lucky_flow:
+    github: luckyframework/lucky_flow
+    version: ~> 0.7.0
+  markd:
+    github: icyleaf/markd

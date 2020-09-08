@@ -21,14 +21,32 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+
+  }
   p {
     @apply py-2;
   }
+  h1 {
+    @apply text-title-color;
+  }
   h2 {
-    @apply text-3xl;
+    @apply text-4xl;
     @apply font-bold;
     @apply font-serif;
     @apply font-medium;
+    @apply pt-8;
+    @apply pb-4;
+    @apply text-title-color;
+  }
+  h3 {
+    @apply text-title-color;
+  }
+  h4 {
+    @apply text-title-color;
+  }
+  main {
+    @apply text-content-color;
   }
 }
 

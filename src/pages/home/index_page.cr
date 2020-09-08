@@ -8,18 +8,19 @@ class Home::IndexPage < GuestLayout
     html = Markd.to_html(file_content.gsub("<p></p>", ""))
 
 
-    article class: "flex flex-col justify-center tracking-tight text-justify" do
+    article class: "flex flex-col justify-center tracking-tight text-justify leading-relaxed" do
 
 
       header class: "flex flex-col" do
 
-        h1 "Le courage de vivre consciemment", class: "text-5xl font-serif font-bold"
-
-        div class: "flex text-gray-700 py-6 italic" do
+        div class: "text-gray-500 py-6 italic text-right" do
           raw "Le&nbsp;"
           time "16 Mai", datetime: "2015-05-16 19:00", class: "inline text-italic"
           raw "&nbsp;par Vince"
         end
+
+        h1 "Fin de la traduction de « The One Skill » de zenhabits", class: "text-5xl font-serif font-bold pt-20 pb-16"
+
 
       end
 

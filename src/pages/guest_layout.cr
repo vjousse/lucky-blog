@@ -62,7 +62,7 @@ abstract class GuestLayout
 
         mount Shared::FlashMessages.new(context.flash)
 
-        main class: "container mx-auto py-10 px-10 lg:px-32" do
+        main class: "container mx-auto px-10 lg:px-64" do
           content
         end
 

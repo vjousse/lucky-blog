@@ -16,6 +16,8 @@ module.exports = {
         'regal-blue': '#243c5a',
         'very-light-gray': 'rgb(245, 245, 245)',
         'light-gray': 'rgb(230, 230, 230)',
+        'content-color': 'rgb(85, 88, 90)',
+        'title-color': 'rgb(43, 43, 43)',
       }
     },
     fontFamily: {

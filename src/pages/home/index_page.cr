@@ -3,8 +3,9 @@ require "markd"
 class Home::IndexPage < GuestLayout
   def content
 
-    file_content = File.read("2013-01-23-le-courage-de-vivre-consciemment.md")
-    html = Markd.to_html(file_content)
+    file_content = File.read("2012-11-05-recrutement-développeur-web-comment-sortir-du-lot-cv-lettre-de-motivation.md")
+    # file_content = File.read("2013-01-23-le-courage-de-vivre-consciemment.md")
+    html = Markd.to_html(file_content.gsub("<p></p>", ""))
 
 
     article class: "flex flex-col justify-center tracking-tight text-justify" do
@@ -12,7 +13,7 @@ class Home::IndexPage < GuestLayout
 
       header class: "flex flex-col" do
 
-        h1 "Le courage de vivre consciemment", class: "text-5xl font-serif font-medium"
+        h1 "Le courage de vivre consciemment", class: "text-5xl font-serif font-bold"
 
         div class: "flex text-gray-700 py-6 italic" do
           raw "Le&nbsp;"

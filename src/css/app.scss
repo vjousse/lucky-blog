@@ -17,10 +17,20 @@
 // @import "components/my_new_component";
 
 @tailwind base;
-
 @tailwind components;
-
 @tailwind utilities;
+
+@layer base {
+  p {
+    @apply py-2;
+  }
+  h2 {
+    @apply text-3xl;
+    @apply font-bold;
+    @apply font-serif;
+    @apply font-medium;
+  }
+}
 
 label, input {
   display: flex;

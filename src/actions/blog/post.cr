@@ -13,7 +13,7 @@ class Blog::Post < BrowserAction
     front_matter = Markdown::Parser.extract_front_matter(file_content)
 
     title = ""
-    if front_matter
+    if front_matter && front_matter.has_key?("title")
       title = front_matter["title"]
     end
 

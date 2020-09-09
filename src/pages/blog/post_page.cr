@@ -10,14 +10,14 @@ class Blog::PostPage < GuestLayout
 
       header class: "flex flex-col" do
 
-        div class: "text-gray-500 py-6 italic text-right" do
+
+        h1 title, class: "text-5xl font-serif font-bold pt-20 pb-16 text-center"
+
+        div class: "text-gray-500 pb-6 italic text-center" do
           raw "Le&nbsp;"
           time "16 Mai", datetime: "2015-05-16 19:00", class: "inline text-italic"
           raw "&nbsp;par Vince"
         end
-
-        h1 title, class: "text-5xl font-serif font-bold pt-20 pb-16 text-center"
-
 
       end
 

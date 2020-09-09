@@ -1,14 +1,21 @@
 class Blog::IndexPage < GuestLayout
+
+  needs posts : Array(String)
+
   def content
 
     article class: "flex flex-col justify-center tracking-tight text-justify leading-relaxed" do
 
-      ul class: "text-xl" do
+      if posts.size > 0
+        ul class: "text-xl" do
 
-        li "Title 1" 
-        li "Title 2" 
-        li "Title 3"
+          posts.each do |title|
+            li title
+          end
 
+        end
+      else
+        h2 "No posts found"
       end
 
     end

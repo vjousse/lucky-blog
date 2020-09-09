@@ -12,10 +12,13 @@ class Blog::Post < BrowserAction
 
     front_matter = Markdown::Parser.extract_front_matter(file_content)
 
-    pp "Action #{front_matter}"
+    title = ""
+    if front_matter
+      title = front_matter["title"]
+    end
 
     html_content = Markd.to_html(file_content.gsub("<p></p>", ""))
 
-    html Blog::PostPage, title: post_slug_unescaped, html_content: html_content
+    html Blog::PostPage, title: title, html_content: html_content
   end
 end

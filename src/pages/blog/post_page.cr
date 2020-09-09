@@ -16,7 +16,7 @@ class Blog::PostPage < GuestLayout
           raw "&nbsp;par Vince"
         end
 
-        h1 title, class: "text-5xl font-serif font-bold pt-20 pb-16"
+        h1 title, class: "text-5xl font-serif font-bold pt-20 pb-16 text-center"
 
 
       end

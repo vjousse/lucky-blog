@@ -6,6 +6,8 @@ class CreatePosts::V20200909163240 < Avram::Migrator::Migration::V1
       add_timestamps
       add title : String
       add content : String
+      add slug : String
+      add filename : String
       add published_at : Time
       add lang : Int32
     end

@@ -39,8 +39,7 @@ class LoadPosts < LuckyCli::Task
               title: front_matter["title"],
               slug: slug,
               filename: filename,
-              #TODO use an enum
-              lang: 1,
+              lang: Post::Lang.new(:fr),
               #TODO use time from file
               published_at: Time.utc,
               hash: hash,
@@ -51,8 +50,7 @@ class LoadPosts < LuckyCli::Task
               title: front_matter["title"],
               slug: slug,
               filename: filename,
-              #TODO use an enum
-              lang: 1,
+              lang: Post::Lang.new(:fr),
               hash: hash,
               content: file_content)
 

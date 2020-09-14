@@ -25,6 +25,13 @@ class LoadPosts < LuckyCli::Task
 
       if front_matter["slug"]?
           slug = front_matter["slug"]
+          date = front_matter["date"]?
+
+          if date
+            date = Time.parse!(date, "%Y-%m-%d %H:%M:%S%:z")
+          else
+            date = Time.utc
+          end
 
           new_posts[slug] = front_matter
 
@@ -41,7 +48,7 @@ class LoadPosts < LuckyCli::Task
               filename: filename,
               lang: Post::Lang.new(:fr),
               #TODO use time from file
-              published_at: Time.utc,
+              published_at: date,
               hash: hash,
               content: file_content)
 
@@ -50,6 +57,7 @@ class LoadPosts < LuckyCli::Task
               title: front_matter["title"],
               slug: slug,
               filename: filename,
+              published_at: date,
               lang: Post::Lang.new(:fr),
               hash: hash,
               content: file_content)

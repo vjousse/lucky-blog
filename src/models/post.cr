@@ -6,5 +6,6 @@ class Post < BaseModel
     column filename : String
     column published_at : Time
     column lang : Int32
+    column hash : String
   end
 end

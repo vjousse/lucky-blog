@@ -1,9 +1,9 @@
 class Markdown::Parser
-  def self.extract_front_matter(content : String): (Hash(String, String) | Nil)
+  def self.extract_front_matter(content : String): Hash(String, String)
 
+    front_matters = {} of String => String
 
     if content.starts_with?("<!--")
-        front_matters = {} of String => String
 
         content.each_line do |line|
 
@@ -27,8 +27,9 @@ class Markdown::Parser
 
         end
 
-        front_matters
     end
+
+    front_matters
 
   end
 

@@ -3,5 +3,5 @@ class SavePost < Post::SaveOperation
   # https://luckyframework.org/guides/database/validating-saving#perma-permitting-columns
   #
 
-  permit_columns title, content, published_at, slug, filename, lang
+  permit_columns title, content, published_at, slug, filename, lang, hash
 end

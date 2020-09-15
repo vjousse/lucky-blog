@@ -48,13 +48,10 @@
   main {
     @apply text-content-color;
   }
-  ul {
+  article ul {
     @apply list-disc;
     @apply px-8;
     @apply py-2;
-  }
-  ol {
-    @apply list-decimal;
   }
 }
 

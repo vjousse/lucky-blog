@@ -3,7 +3,7 @@ class Blog::Index < BrowserAction
 
   get "/blog" do
 
-    posts = PostQuery.new
+    posts = PostQuery.new.published_at.desc_order
 
     html Blog::IndexPage, posts: posts
 

@@ -47,7 +47,6 @@ class LoadPosts < LuckyCli::Task
               slug: slug,
               filename: filename,
               lang: Post::Lang.new(:fr),
-              #TODO use time from file
               published_at: date,
               hash: hash,
               content: file_content)

@@ -1,6 +1,6 @@
 class Blog::IndexPage < GuestLayout
 
-  needs posts : Array(String)
+  needs posts : PostQuery
 
   def content
 
@@ -9,8 +9,11 @@ class Blog::IndexPage < GuestLayout
       if posts.size > 0
         ul class: "text-xl" do
 
-          posts.each do |title|
-            li title
+          posts.each do |post|
+            li do
+              link post.title,
+                to: Blog::Post.with(post_slug: post.slug)
+            end
           end
 
         end

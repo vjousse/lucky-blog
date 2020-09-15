@@ -71,7 +71,7 @@ Nous étions arrivé la veille et avons dormi dans la « voiture » (un [spaceto
 
 
 <p style="text-align:center;">
-<a href="/images/randonnee_beaufortain/lac_saint_guerin_chouche_soleil.jpg"><img src="/images/randonnee_beaufortain/lac_saint_guerin_couche_soleil_small.jpg" alt="Lac saint guérin" /></a>
+<a href="/images/randonnee_beaufortain/lac_saint_guerin_couche_soleil.jpg"><img src="/images/randonnee_beaufortain/lac_saint_guerin_couche_soleil_small.jpg" alt="Lac saint guérin" /></a>
 </p>
 
 Le départ se fait au pied du barrage. Il y un parking où l'on a laissé la voiture pour la journée. Le ciel était un peu chargé au départ, mais ça ne nous a pas empêché d'en prendre plein les yeux 🙂
@@ -83,7 +83,7 @@ Le départ se fait au pied du barrage. Il y un parking où l'on a laissé la voi
 En prenant la direction du sud du Lac, vous tomberez forcément sur cette sorte de passerelle (pont de singe) himalayenne plutôt sympathique :
 
 <p style="text-align:center;">
-<a href="/images/randonnee_beaufortain/lac_saint_passerelle.jpg"><img src="/images/randonnee_beaufortain/lac_saint_guerin_passerelle_small.jpg" alt="Lac saint guérin passerelle" /></a>
+<a href="/images/randonnee_beaufortain/lac_saint_guerin_passerelle.jpg"><img src="/images/randonnee_beaufortain/lac_saint_guerin_passerelle_small.jpg" alt="Lac saint guérin passerelle" /></a>
 </p>
 
 Nous avons ensuite pris la direction __col de la Louze__, et quand on y est et qu'on se retourne, on peut admirer le **Mont Blanc** au loin :

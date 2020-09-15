@@ -3,6 +3,11 @@ class Blog::PostPage < GuestLayout
   needs title : String
   needs html_content : String
 
+
+  def page_title
+    title
+  end
+
   def content
 
     article class: "flex flex-col justify-center tracking-tight text-justify leading-relaxed" do

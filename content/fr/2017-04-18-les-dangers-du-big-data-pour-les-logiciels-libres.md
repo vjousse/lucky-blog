@@ -63,7 +63,7 @@ Mais dans le coup, __on risque d'avoir un sérieux problème non__ ? D'un côté
     <img alt="Schéma développement logiciel Open-Source données non libres" src="/images/schema_dev_opensource_donnees.png" />
 </div>
 
-## Un cas concrêt : reconnaissance de la parole en français
+## Un cas concrêt : reconnaissance de la parole en français
 
 Prenons un cas concrêt que je connais bien de part mon parcours professionnel : la reconnaissance de la parole, et plus particulièrement la __reconnaissance de la parole en français__. Mais le principe est certainement généralisable à d'autres domaines similaires utilisant du « machine learning » et du « big data ».
 

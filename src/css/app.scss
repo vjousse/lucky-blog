@@ -24,6 +24,10 @@
   body {
 
   }
+  main a {
+    @apply text-purple-800;
+  }
+
   p {
     @apply py-2;
   }

@@ -2,6 +2,7 @@ class Blog::PostPage < GuestLayout
 
   needs title : String
   needs html_content : String
+  needs published_at : Time
 
 
   def page_title
@@ -20,7 +21,7 @@ class Blog::PostPage < GuestLayout
 
         div class: "text-gray-500 pb-6 italic text-center" do
           raw "Le&nbsp;"
-          time "16 Mai", datetime: "2015-05-16 19:00", class: "inline text-italic"
+          time "#{published_at.to_s("%d-%m-%Y")}", datetime: "#{published_at.to_s("%d-%m-%Y")}", class: "inline text-italic"
           raw "&nbsp;par Vince"
         end
 

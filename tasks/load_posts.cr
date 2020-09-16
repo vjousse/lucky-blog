@@ -24,7 +24,7 @@ class LoadPosts < LuckyCli::Task
 
       #next if front_matter["status"]? == "draft"
       if front_matter["status"]? == "draft"
-        pp "- Skipping #{front_matter["slug"]} because it's draft"
+        puts "- Skipping #{front_matter["slug"]} because it's draft"
         next
       end
 

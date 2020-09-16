@@ -19,7 +19,7 @@ class Blog::IndexPage < GuestLayout
 
               div class: "text-gray-500 italic text-right text-sm" do
                 raw "Le&nbsp;"
-                time "#{post.published_at.to_s("%d-%m-%Y")}", datetime: "2015-05-16 19:00", class: "inline text-italic"
+                time "#{post.published_at.to_s("%d-%m-%Y")}", datetime: "#{post.published_at.to_s("%d-%m-%Y")}", class: "inline text-italic"
                 raw "&nbsp;par Vince"
               end
 

@@ -12,7 +12,7 @@ class Blog::Post < BrowserAction
     if post
       html_content = Markd.to_html(post.content.gsub("<p></p>", ""))
 
-      html Blog::PostPage, title: post.title, html_content: html_content
+      html Blog::PostPage, title: post.title, html_content: html_content, published_at: post.published_at
     else
       raise Lucky::RouteNotFoundError.new(context)
     end

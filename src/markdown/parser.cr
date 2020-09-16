@@ -33,4 +33,18 @@ class Markdown::Parser
 
   end
 
+  def self.extract_teaser(content : String): (String|Nil)
+    front_matter_index = content.index("-->")
+    teaser_index = content.index("<!-- TEASER_END -->")
+
+    if teaser_index
+      start = 0
+      if front_matter_index && (front_matter_index + 3 < content.size)
+        start = front_matter_index + 3
+      end
+
+      return content[start..teaser_index-1].strip
+    end
+  end
+
 end

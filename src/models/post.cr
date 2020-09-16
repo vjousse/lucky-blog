@@ -8,6 +8,7 @@ class Post < BaseModel
   table do
     column title : String
     column content : String
+    column teaser : String?
     column slug : String
     column filename : String
     column published_at : Time

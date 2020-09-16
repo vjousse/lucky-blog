@@ -22,6 +22,7 @@ class LoadPosts < LuckyCli::Task
       file_content = File.read(filename)
       hash = Digest::MD5.digest(file_content).to_slice.hexstring
       front_matter = Markdown::Parser.extract_front_matter(file_content)
+      teaser = Markdown::Parser.extract_teaser(file_content)
 
       if front_matter["slug"]?
           slug = front_matter["slug"]
@@ -49,6 +50,7 @@ class LoadPosts < LuckyCli::Task
               lang: Post::Lang.new(:fr),
               published_at: date,
               hash: hash,
+              teaser: teaser,
               content: file_content)
 
           elsif old_post.hash != hash
@@ -59,6 +61,7 @@ class LoadPosts < LuckyCli::Task
               published_at: date,
               lang: Post::Lang.new(:fr),
               hash: hash,
+              teaser: teaser,
               content: file_content)
 
             puts "-> Updating old post with slug #{slug}"
@@ -67,8 +70,6 @@ class LoadPosts < LuckyCli::Task
       end
 
     end
-
-    #pp new_posts
 
   end
 end

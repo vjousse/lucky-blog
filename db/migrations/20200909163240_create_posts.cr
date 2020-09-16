@@ -11,6 +11,7 @@ class CreatePosts::V20200909163240 < Avram::Migrator::Migration::V1
       add published_at : Time
       add lang : Int32
       add hash : String
+      add teaser : String?
     end
   end
 

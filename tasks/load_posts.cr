@@ -17,12 +17,16 @@ class LoadPosts < LuckyCli::Task
 
     Dir["content/fr/*.md"].each do |filename|
 
-      puts "Got #{filename}"
-
       file_content = File.read(filename)
       hash = Digest::MD5.digest(file_content).to_slice.hexstring
       front_matter = Markdown::Parser.extract_front_matter(file_content)
       teaser = Markdown::Parser.extract_teaser(file_content)
+
+      #next if front_matter["status"]? == "draft"
+      if front_matter["status"]? == "draft"
+        pp "- Skipping #{front_matter["slug"]} because it's draft"
+        next
+      end
 
       if front_matter["slug"]?
           slug = front_matter["slug"]

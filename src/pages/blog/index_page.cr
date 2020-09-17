@@ -13,7 +13,7 @@ class Blog::IndexPage < GuestLayout
 
           posts.each do |post|
             li class: "list-none pb-10" do
-              link to: Blog::Post.with(post_slug: post.slug) do
+              link to: Blog::PostDetail.with(post_slug: post.slug) do
                 h2 post.title
               end
 
@@ -31,7 +31,7 @@ class Blog::IndexPage < GuestLayout
                 end
 
                 div class: "text-right italic" do
-                  link to: Blog::Post.with(post_slug: post.slug) do
+                  link to: Blog::PostDetail.with(post_slug: post.slug) do
                     text "Lire la suite >>"
                   end
                 end

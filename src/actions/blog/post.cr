@@ -1,7 +1,7 @@
 require "uri"
 require "markd"
 
-class Blog::Post < BrowserAction
+class Blog::PostDetail < BrowserAction
   include Auth::AllowGuests
 
   get "/blog/:post_slug" do

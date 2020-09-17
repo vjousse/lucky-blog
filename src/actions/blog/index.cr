@@ -8,4 +8,13 @@ class Blog::Index < BrowserAction
     html Blog::IndexPage, posts: posts
 
   end
+
+
+  get "/en/blog" do
+
+    posts = PostQuery.new.lang(Post::Lang.new(:en).value).published_at.desc_order
+
+    html Blog::IndexPage, posts: posts
+
+  end
 end

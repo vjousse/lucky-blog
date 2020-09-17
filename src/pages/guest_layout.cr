@@ -29,7 +29,7 @@ abstract class GuestLayout
 
         nav class: "flex items-center justify-between flex-wrap p-6 lg:px-12 border-t-1 border-b-1 border-light-gray relative bg-very-light-gray text-gray-900" do
           div class: "flex items-center flex-shrink-0 mr-6" do
-            a class: "font-bold font-serif text-4xl tracking-tight", href: "#" do
+            a class: "font-bold font-serif text-4xl tracking-tight", href: "/" do
               text "Vince's"
             end
           end

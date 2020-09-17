@@ -15,7 +15,7 @@
 
 J'ai toujours été classé (et le suis encore) dans la case des personnes __atypiques__. Je suis enseignant chercheur à l'Université, je gère une entreprise et j'ai la direction technique d'une autre, j'ai repris mes études avec 2 enfants pour obtenir une thèse par la suite, j'écris des trucs bizarres sur ce blog et j'ai jamais été capable de __répondre simplement aux questions du genre__ :
 
-- __Tu fais quoi dans la vie__ ?
+- __Tu fais quoi dans la vie__ ?
 - __Tu veux faire quoi plus tard__ ?
 - Vraiment, t'es sûr que __l'éléphant il est plus fort que l'hippopotame__ ?
 

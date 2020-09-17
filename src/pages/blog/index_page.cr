@@ -12,12 +12,12 @@ class Blog::IndexPage < GuestLayout
         ul class: "text-xl" do
 
           posts.each do |post|
-            li class: "list-none" do
+            li class: "list-none pb-10" do
               link to: Blog::Post.with(post_slug: post.slug) do
                 h2 post.title
               end
 
-              div class: "text-gray-500 italic text-right text-sm" do
+              div class: "text-gray-500 italic text-left text-sm" do
                 raw "Le&nbsp;"
                 time "#{post.published_at.to_s("%d-%m-%Y")}", datetime: "#{post.published_at.to_s("%d-%m-%Y")}", class: "inline text-italic"
                 raw "&nbsp;par Vince"
@@ -29,6 +29,13 @@ class Blog::IndexPage < GuestLayout
                 div do
                   raw html_teaser
                 end
+
+                div class: "text-right italic" do
+                  link to: Blog::Post.with(post_slug: post.slug) do
+                    text "Lire la suite >>"
+                  end
+                end
+
               end
             end
           end

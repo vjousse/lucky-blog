@@ -9,11 +9,11 @@
 .. type: text
 -->
 
-Être différent est trop souvent vu comme un problème. On se sent seul, incompris et on a peur d'être rejeté. On préfère rentrer dans le rang qu'exprimer notre différence. Et si, être différent était __la seule voix possible__ ?
+Être différent est trop souvent vu comme un problème. On se sent seul, incompris et on a peur d'être rejeté. On préfère rentrer dans le rang qu'exprimer notre différence. Et si, être différent était __la seule voix possible__ ?
 
 <!-- TEASER_END -->
 
-J'ai toujours été classé (et le suis encore) dans la case des personnes __atypiques__. Je suis enseignant chercheur à l'Université, je gère une entreprise et j'ai la direction technique d'une autre, j'ai repris mes études avec 2 enfants pour obtenir une thèse par la suite, j'écris des trucs bizarres sur ce blog et j'ai jamais été capable de __répondre simplement aux questions du genre__ :
+J'ai toujours été classé (et le suis encore) dans la case des personnes __atypiques__. Je suis enseignant chercheur à l'Université, je gère une entreprise et j'ai la direction technique d'une autre, j'ai repris mes études avec 2 enfants pour obtenir une thèse par la suite, j'écris des trucs bizarres sur ce blog et j'ai jamais été capable de __répondre simplement aux questions du genre__ :
 
 - __Tu fais quoi dans la vie__ ?
 - __Tu veux faire quoi plus tard__ ?

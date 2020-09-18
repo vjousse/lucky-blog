@@ -9,6 +9,11 @@ class Blog::Index < BrowserAction
 
   end
 
+end
+
+
+class Blog::IndexEn < BrowserAction
+  include Auth::AllowGuests
 
   get "/en/blog" do
 

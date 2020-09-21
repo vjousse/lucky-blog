@@ -1,0 +1,21 @@
+{
+  "plugins": [
+    ["prismjs", {
+      "languages": [
+        "css",
+        "elm",
+        "java",
+        "javascript",
+        "json",
+        "markup",
+        "php",
+        "py",
+        "scala",
+        "shell"
+      ],
+      "plugins": ["line-numbers", "toolbar", "copy-to-clipboard"],
+      "theme": "twilight",
+      "css": true
+    }]
+  ]
+}

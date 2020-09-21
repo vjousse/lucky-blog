@@ -12,3 +12,11 @@ require("turbolinks").start();
 // document.addEventListener("turbolinks:load", function() {
 //   ...
 // })
+
+import Prism from 'prismjs';
+//var loadLanguages = require('prismjs/components/');
+//loadLanguages(['elm']);
+//
+// Highlight all matching syntax
+Prism.highlightAll();
+console.log(Prism);

@@ -13,7 +13,7 @@
         "scala",
         "shell"
       ],
-      "plugins": ["line-numbers", "toolbar", "copy-to-clipboard"],
+      "plugins": ["toolbar", "copy-to-clipboard"],
       "theme": "twilight",
       "css": true
     }]

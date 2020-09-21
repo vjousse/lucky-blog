@@ -116,33 +116,32 @@ if __name__ == '__main__':
 If you run your component in production using crossbar.io and not the command line, you can pass the parameters in your crossbar.io config file:
 
 ```json
-
+{
+   "type": "container",
+   "options": {
+      "pythonpath": [".."]
+   },
+   "components": [
       {
-         "type": "container",
-         "options": {
-            "pythonpath": [".."]
-         },
-         "components": [
-            {
-               "type": "class",
-               "classname": "mithril.mithril.AppSession",
-               "realm": "realm1",
-                "extra": {
-                    "v1": "value1",
-                    "v2": "value2"
-                },
-               "transport": {
-                  "type": "websocket",
-                  "endpoint": {
-                     "type": "tcp",
-                     "host": "127.0.0.1",
-                     "port": 8080
-                  },
-                  "url": "ws://127.0.0.1:8080/ws"
-               }
-            }
-         ]
+         "type": "class",
+         "classname": "mithril.mithril.AppSession",
+         "realm": "realm1",
+          "extra": {
+              "v1": "value1",
+              "v2": "value2"
+          },
+         "transport": {
+            "type": "websocket",
+            "endpoint": {
+               "type": "tcp",
+               "host": "127.0.0.1",
+               "port": 8080
+            },
+            "url": "ws://127.0.0.1:8080/ws"
+         }
       }
+   ]
+}
 ```
 
 Here your are! Enjoy.

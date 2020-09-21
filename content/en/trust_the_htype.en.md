@@ -66,10 +66,12 @@ val bar = test - two
 
 Here is the error message when you try to compile:
 
-    error: value - is not a member of java.lang.String
-    val bar = test - two
-                ^
-    one error found
+```scala
+error: value - is not a member of java.lang.String
+val bar = test - two
+            ^
+one error found
+```
 
 You can see that the compiler as inferred the type of _test_ as a String without having to tell it explicitly.
 

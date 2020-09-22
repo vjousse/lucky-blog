@@ -9,7 +9,7 @@
 .. type: text
 -->
 
-<p>Qui n'a pas rêvé de travailler quatre heures par semaine tout en gagnant bien sa vie ? C'est ce que <a href="http://www.fourhourworkweek.com/">Timothy Ferriss</a> vous propose de découvrir dans son best-seller « <a href="http://www.amazon.fr/gp/product/2744064173/ref=as_li_ss_tl?ie=UTF8&amp;tag=vincjous-21&amp;linkCode=as2&amp;camp=1642&amp;creative=19458&amp;creativeASIN=2744064173">La Semaine de 4 heures: Travaillez moins, gagnez plus et vivez mieux !</a><img alt="" border="0" height="1" src="http://www.assoc-amazon.fr/e/ir?t=vincjous-21&amp;l=as2&amp;o=8&amp;a=2744064173" style="border: none !important; margin: 0px !important;" width="1" /> ». Ce livre a été pour moi une révélation : il ouvre la voix à une autre façon de vivre sa vie.</p>
+<p>Qui n'a pas rêvé de travailler quatre heures par semaine tout en gagnant bien sa vie ? C'est ce que <a href="http://www.fourhourworkweek.com/">Timothy Ferriss</a> vous propose de découvrir dans son best-seller « <a href="http://www.amazon.fr/gp/product/2744064173/ref=as_li_ss_tl?ie=UTF8&amp;tag=vincjous-21&amp;linkCode=as2&amp;camp=1642&amp;creative=19458&amp;creativeASIN=2744064173">La Semaine de 4 heures: Travaillez moins, gagnez plus et vivez mieux !</a> ». Ce livre a été pour moi une révélation : il ouvre la voix à une autre façon de vivre sa vie.</p>
 <!-- TEASER_END -->
 
 <h2>Travailler moins pour gagner plus : La semaine de 4 heures</h2>
@@ -51,6 +51,6 @@
 
 <h3>À acheter ?</h3>
 
-<p>Oui sans hésitation, c'est une référence en la matière. J'ai pris énormément de plaisir à le lire et j'applique encore quotidiennement des conseils qui y sont donnés. Lien amazon direct :&nbsp;<a href="http://www.amazon.fr/gp/product/2744064173/ref=as_li_ss_tl?ie=UTF8&amp;tag=vincjous-21&amp;linkCode=as2&amp;camp=1642&amp;creative=19458&amp;creativeASIN=2744064173">La Semaine de 4 heures: Travaillez moins, gagnez plus et vivez mieux !</a><img alt="" border="0" height="1" src="http://www.assoc-amazon.fr/e/ir?t=vincjous-21&amp;l=as2&amp;o=8&amp;a=2744064173" style="border: none !important; margin: 0px !important;" width="1" /></p>
+<p>Oui sans hésitation, c'est une référence en la matière. J'ai pris énormément de plaisir à le lire et j'applique encore quotidiennement des conseils qui y sont donnés. Lien amazon direct :&nbsp;<a href="http://www.amazon.fr/gp/product/2744064173/ref=as_li_ss_tl?ie=UTF8&amp;tag=vincjous-21&amp;linkCode=as2&amp;camp=1642&amp;creative=19458&amp;creativeASIN=2744064173">La Semaine de 4 heures: Travaillez moins, gagnez plus et vivez mieux !</a></p>
 
 <p><em>Note de transparence : Les liens amazon de cette page sont réalisés via un programme d'affiliation. Si vous achetez un produit par un de ces liens, Amazon me versera une commission d'environ 5%.</em></p>

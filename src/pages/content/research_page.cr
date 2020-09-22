@@ -1,4 +1,9 @@
 class Content::ResearchPage < GuestLayout
+
+  def page_title
+    "Named Speaker Identification"
+  end
+
   def content
 
     article class: "flex flex-col justify-center tracking-tight text-justify leading-relaxed text-xl" do

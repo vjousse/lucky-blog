@@ -1,4 +1,9 @@
 class Content::AboutPage < GuestLayout
+
+  def page_title
+    "About"
+  end
+
   def content
 
     article class: "flex flex-col justify-center tracking-tight text-justify leading-relaxed text-xl" do

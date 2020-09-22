@@ -1,4 +1,4 @@
-# my_app
+# Vince's
 
 This is a project written using [Lucky](https://luckyframework.org). Enjoy!
 

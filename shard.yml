@@ -1,11 +1,11 @@
-name: my_app
+name: vinces
 version: 0.1.0
 
 authors:
   - Vincent Jousse <vincent@jousse.org>
 
 targets:
-  my_app:
+  vinces:
     main: src/my_app.cr
 
 crystal: 0.35.1

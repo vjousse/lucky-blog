@@ -36,23 +36,15 @@ abstract class GuestLayout
           div class: "w-full block lg:flex lg:items-end lg:w-auto" do
             ul class: "flex text-xl font-sans-serif align-text-bottom items-center" do
               li do
-                link "Blog",
+                link "Articles",
                   to: Blog::Index, class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900"
               end
               li class: "ml-4 mr-4 text-gray-400" do
                 text "|"
               end
               li do
-                a class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900", href: "#responsive-header" do
-                  text " Tech"
-                end
-              end
-              li class: "ml-4 mr-4 text-gray-400" do
-                text "|"
-              end
-              li do
-                a class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900", href: "#responsive-header" do
-                  text " À propos"
+                a class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900 infolink number-circle", href: "#responsive-header" do
+                  text " ?"
                 end
               end
             end

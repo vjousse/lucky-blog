@@ -65,6 +65,20 @@
   }
 }
 
+.number-circle {
+    width: 1em;
+    height: 1em;
+    box-sizing: initial;
+
+    background: #fff;
+    border: 0.1em solid;
+    text-align: center;
+    border-radius: 50%;
+
+    line-height: 1em;
+    box-sizing: content-box;
+}
+
 label, input {
   display: flex;
 }

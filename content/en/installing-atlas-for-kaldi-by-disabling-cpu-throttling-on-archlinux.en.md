@@ -26,16 +26,19 @@ I had to set the scaling governor of my cpus to performance. So did I.
 
 First by modifying directly the files with this command line (using bash):
 
+```shell
     for CPUFREQ in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do [ -f $CPUFREQ ] || continue; echo -n performance > $CPUFREQ; done
+```
 
 Of course, it didn't work.
 
 Then, as mentionned on the [Archlinux wiki page](https://wiki.archlinux.org/index.php/CPU_frequency_scaling) I used `cpupower`:
 
+```shell
     cpupower frequency-set -g performance
+```
 
 Of course again, it didn't work.
 
 Then I found the Holy Grail with this [post](http://unix.stackexchange.com/questions/121410/setting-cpu-governor-to-on-demand-or-conservative) on StackExchange. The problem is specific to the
  intel_pstate governor (default for Intel Sandy Bridge and Ivy Bridge CPUs as of kernel 3.9). So the solution is simply to disable it and load the `acpi-cpufreq` module. And Ta-da!
-

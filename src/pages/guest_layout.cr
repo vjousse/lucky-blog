@@ -16,7 +16,7 @@ abstract class GuestLayout
   #
   # This will force pages to define their own 'page_title' method.
   def page_title
-    "Welcome"
+    "Articles"
   end
 
   def render

@@ -32,7 +32,11 @@ class Blog::IndexPage < GuestLayout
 
                 div class: "text-right italic" do
                   link to: Blog::PostDetail.with(post_slug: post.slug) do
-                    text "Lire la suite >>"
+                    if post.lang.value === Post::Lang.new(:fr).value
+                      text "Lire la suite >>"
+                    else
+                      text "Read more >>"
+                    end
                   end
                 end
 

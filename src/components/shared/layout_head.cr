@@ -6,7 +6,7 @@ class Shared::LayoutHead < BaseComponent
   def render
     head do
       utf8_charset
-      title "#{@page_title} - The learning blog"
+      title "#{@page_title}"
       css_link asset("css/app.css"), data_turbolinks_track: "reload"
       js_link asset("js/app.js"), defer: "true", data_turbolinks_track: "reload"
       empty_tag "link", rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"

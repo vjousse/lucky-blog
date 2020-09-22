@@ -50,9 +50,9 @@ abstract class GuestLayout
                 text "|"
               end
               li do
-                a class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900 number-circle", href: "#responsive-header" do
-                  text " ?"
-                end
+
+                link "?",
+                  to: Content::About, class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900 number-circle"
               end
             end
           end

@@ -6,6 +6,7 @@ class AppServer < Lucky::BaseAppServer
       Lucky::ForceSSLHandler.new,
       Lucky::HttpMethodOverrideHandler.new,
       Lucky::LogHandler.new,
+      LegacyRedirectHandler.new,
       Lucky::ErrorHandler.new(action: Errors::Show),
       Lucky::RemoteIpHandler.new,
       Lucky::RouteHandler.new,

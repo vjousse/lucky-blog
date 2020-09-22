@@ -11,7 +11,7 @@ class Blog::PostPage < GuestLayout
 
   def content
 
-    article class: "line-numbers flex flex-col justify-center tracking-tight text-justify leading-relaxed" do
+    article class: "line-numbers flex flex-col justify-center tracking-tight text-justify leading-relaxed text-xl" do
 
 
       header class: "flex flex-col" do
@@ -27,9 +27,7 @@ class Blog::PostPage < GuestLayout
 
       end
 
-      div class: "text-xl" do
-        raw html_content
-      end
+      raw html_content
 
     end
   end

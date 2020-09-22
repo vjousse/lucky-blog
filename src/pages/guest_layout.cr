@@ -43,7 +43,14 @@ abstract class GuestLayout
                 text "|"
               end
               li do
-                a class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900 infolink number-circle", href: "#responsive-header" do
+                link "Research",
+                  to: Content::Research, class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900"
+              end
+              li class: "ml-4 mr-4 text-gray-400" do
+                text "|"
+              end
+              li do
+                a class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900 number-circle", href: "#responsive-header" do
                   text " ?"
                 end
               end

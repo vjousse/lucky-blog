@@ -2,7 +2,7 @@ class LegacyRedirectHandler
   include HTTP::Handler
 
   def call(context : HTTP::Server::Context)
-
+    Log.info { {path: context.request.path }}
 
     if md = /\/en(.*)/.match(context.request.path)
       Log.info { {match_data: md} }
@@ -20,6 +20,9 @@ class LegacyRedirectHandler
     elsif context.request.path.starts_with?("/tech/")
       context.response.status_code = 301
       context.response.headers["Location"] = context.request.path.gsub("/tech", "/blog")
+    elsif URI.decode(context.request.path).starts_with?("/à-propos")
+      context.response.status_code = 301
+      context.response.headers["Location"] = "/about"
     else
       call_next(context)
     end

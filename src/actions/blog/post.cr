@@ -1,4 +1,3 @@
-require "uri"
 require "markd"
 
 class Blog::PostDetail < BrowserAction

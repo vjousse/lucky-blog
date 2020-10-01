@@ -45,7 +45,7 @@ abstract class XMLAction < Lucky::Action
               if article.teaser
                 xml.element("description") { xml.cdata article.teaser.not_nil! }
               end
-              xml.element("link") { xml.text URI.encode("#{link}articles/#{article.slug}") }
+              xml.element("link") { xml.text URI.encode("#{link}blog/#{article.slug}") }
               xml.element("dc:creator") { xml.cdata "Vincent Jousse" }
               xml.element("pubDate") { xml.text article.published_at.to_rfc2822 }
               if article.content

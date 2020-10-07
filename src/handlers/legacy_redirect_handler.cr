@@ -2,13 +2,10 @@ class LegacyRedirectHandler
   include HTTP::Handler
 
   def call(context : HTTP::Server::Context)
-    Log.info { {path: context.request.path }}
 
     if md = /\/en(.*)/.match(context.request.path)
-      Log.info { {match_data: md} }
 
       if new_path = md[1]?
-        Log.info { {new_path: new_path} }
         if new_path == ""
           new_path = "/"
         end

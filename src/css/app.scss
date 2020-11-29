@@ -52,10 +52,18 @@
   main {
     @apply text-content-color;
   }
-  article ul {
-    @apply list-disc;
+
+  article ol, article ul {
     @apply px-8;
     @apply py-2;
+  }
+
+  article ol {
+    @apply list-decimal;
+  }
+
+  article ul {
+    @apply list-disc;
   }
   code {
     @apply bg-gray-300;

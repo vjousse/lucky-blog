@@ -15,7 +15,7 @@ class LoadPosts < LuckyCli::Task
 
     -l LANG,--lang=LANG             The language of the posts. It can be 'fr' or 'en'.
                                     Default to 'fr.
-    -l DIRECTORY,--dir=DIRECTORY    The directory to read the posts from.
+    -d DIRECTORY,--dir=DIRECTORY    The directory to read the posts from.
 
     example: lucky load_posts -l fr -d content/fr/
     TEXT

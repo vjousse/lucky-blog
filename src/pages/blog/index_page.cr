@@ -18,10 +18,13 @@ class Blog::IndexPage < GuestLayout
               end
 
               div class: "text-gray-500 italic text-left text-sm" do
-                raw "Le&nbsp;"
                 time "#{post.published_at.to_s("%d-%m-%Y")}", datetime: "#{post.published_at.to_s("%d-%m-%Y")}", class: "inline text-italic"
-                raw "&nbsp;par Vince"
+                raw "&nbsp;-&nbsp;"
+
+                link "Vincent Jousse",
+                  to: Content::About, class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900"
               end
+
 
               if teaser = post.teaser
                 html_teaser = Markd.to_html(teaser)

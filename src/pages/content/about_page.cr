@@ -24,8 +24,10 @@ class Content::AboutPage < GuestLayout
         end
         text ", you can find me on "
         a "Twitter", href: "http://twitter.com/vjousse"
-        text " or "
+        text ", "
         a "Mastodon", href: "https://mamot.fr/@vjousse", rel: "me"
+        text " or "
+        a "Linkedin", href: "https://www.linkedin.com/in/vincent-jousse-798b1a11/", rel: "me"
         text "."
       end
       ul class: "list-none" do

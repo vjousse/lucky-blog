@@ -18,6 +18,9 @@ let webpackNotifier = new WebpackNotifierPlugin({
 })
 plugins.push(webpackNotifier)
 
+
+const tailwindcss = require("tailwindcss");
+
 // Compress static assets in production
 if (mix.inProduction()) {
   let CompressionWepackPlugin = require('compression-webpack-plugin');
@@ -55,7 +58,8 @@ mix
     imgLoaderOptions: { enabled: false },
     // Stops Mix from clearing the console when compilation succeeds
     clearConsole: false,
-    postCss: [require('tailwindcss')]
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.config.js")],
   })
   // Set public path so manifest gets output here
   .setPublicPath("public")

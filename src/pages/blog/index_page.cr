@@ -1,16 +1,12 @@
 require "markd"
 
 class Blog::IndexPage < GuestLayout
-
   needs posts : PostQuery
 
   def content
-
     div class: "flex flex-col justify-center tracking-tight text-justify leading-relaxed pt-10" do
-
       if posts.size > 0
         ul class: "text-xl" do
-
           posts.each do |post|
             li class: "list-none pb-10" do
               link to: Blog::PostDetail.with(post_slug: post.slug) do
@@ -24,7 +20,6 @@ class Blog::IndexPage < GuestLayout
                 link "Vincent Jousse",
                   to: Content::About, class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900"
               end
-
 
               if teaser = post.teaser
                 html_teaser = Markd.to_html(teaser)
@@ -42,16 +37,13 @@ class Blog::IndexPage < GuestLayout
                     end
                   end
                 end
-
               end
             end
           end
-
         end
       else
         h2 "No posts found"
       end
-
     end
   end
 end

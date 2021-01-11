@@ -4,5 +4,4 @@ class Content::Research < BrowserAction
   get "/research" do
     html Content::ResearchPage
   end
-
 end

@@ -26,7 +26,6 @@ abstract class GuestLayout
       mount Shared::LayoutHead, page_title: page_title, context: context
 
       body do
-
         nav class: "flex items-center justify-between flex-wrap p-6 lg:px-12 border-t-1 border-b-1 border-light-gray relative bg-gray-100 text-gray-900" do
           div class: "flex items-center flex-shrink-0 mr-6" do
             a class: "font-bold font-serif text-4xl tracking-tight", href: "/" do
@@ -50,7 +49,6 @@ abstract class GuestLayout
                 text "|"
               end
               li do
-
                 link "?",
                   to: Content::About, class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900 number-circle"
               end
@@ -66,11 +64,8 @@ abstract class GuestLayout
         end
 
         footer class: "py-12" do
-
         end
-
       end
     end
   end
-
 end

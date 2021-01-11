@@ -4,7 +4,6 @@ class Blog::PostDetail < BrowserAction
   include Auth::AllowGuests
 
   get "/blog/:post_slug" do
-
     post_slug_unescaped = URI.decode(post_slug)
     post = PostQuery.new.slug(post_slug_unescaped).first?
 

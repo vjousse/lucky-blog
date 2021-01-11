@@ -1,8 +1,7 @@
 class Post < BaseModel
-
   avram_enum Lang do
-    Fr   # 0
-    En  # 1
+    Fr # 0
+    En # 1
   end
 
   table do

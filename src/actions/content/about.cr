@@ -4,5 +4,4 @@ class Content::About < BrowserAction
   get "/about" do
     html Content::AboutPage
   end
-
 end

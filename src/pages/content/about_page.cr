@@ -1,13 +1,10 @@
 class Content::AboutPage < GuestLayout
-
   def page_title
     "About"
   end
 
   def content
-
     article class: "flex flex-col justify-center tracking-tight text-justify leading-relaxed text-xl" do
-
       h2 "License"
       para do
         text "All the content of this site is released under the "
@@ -49,7 +46,7 @@ class Content::AboutPage < GuestLayout
           text "✓ I wrote "
           strong "a PhD Thesis"
           text " about "
-          link "named speaker identification", to: Content::Research 
+          link "named speaker identification", to: Content::Research
         end
         li do
           text "✓ I was "
@@ -66,6 +63,5 @@ class Content::AboutPage < GuestLayout
         end
       end
     end
-
   end
 end

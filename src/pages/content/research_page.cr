@@ -1,15 +1,11 @@
 class Content::ResearchPage < GuestLayout
-
   def page_title
     "Named Speaker Identification"
   end
 
   def content
-
     article class: "flex flex-col justify-center tracking-tight text-justify leading-relaxed text-xl" do
-
       header class: "flex flex-col" do
-
         h1 "Named Speaker Identification", class: "text-5xl font-serif font-bold pt-20 pb-16"
 
         para class: "lead" do
@@ -150,10 +146,7 @@ class Content::ResearchPage < GuestLayout
             a "Download as PDF", href: "../../resources/pdf/Baz_TAL08.pdf"
           end
         end
-
       end
-
     end
   end
 end
-

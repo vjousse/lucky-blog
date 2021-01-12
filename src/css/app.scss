@@ -45,6 +45,9 @@
   }
   h3 {
     @apply text-title-color;
+    @apply text-3xl;
+    @apply pt-4;
+    @apply pb-2;
   }
   h4 {
     @apply text-title-color;

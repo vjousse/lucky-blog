@@ -15,9 +15,9 @@ I've been trying out [Crystal Lang](https://crystal-lang.org/) for a few months 
 
 ## Coming from Rust and Python
 
-Some time ago, I wrote a blog post where [I explained how I came from Python to Rust](/blog/from-python-to-go-to-rust). Here is a quick summary: I love when a compiler has my back. Since this blog post, I spent quite some time coding with Rust but, at some point, I always came to the same conclusion: the compiler is way too much on my back!
+Last time, I wrote a blog post where [I explained how I came from Python to Rust](/blog/from-python-to-go-to-rust). Here is a quick summary: I love when a compiler has my back. Since this blog post, I spent quite some time coding with Rust but, at some point, I always came to the same conclusion: the compiler is way too much on my back!
 
-I know that I should try to understand lifetimes and ownership and that once I will be mastering those topics my life as a Rust programmer will be perfect… and blah blah bah. But, for whatever reason, it doesn't seem to work that way for me. And one day, while looking for a Web Framework, I came across [Crystal Lang](https://crystal-lang.org/), and more especially, the [Lucky Framework](https://www.luckyframework.org/). That's how it all began.
+I know I should try to understand lifetimes and ownership and that once I will be mastering those topics my life as a Rust programmer will be perfect… and blah blah bah. But, for whatever reason, it doesn't seem to work for me. And one day, while looking for a Web Framework, I came across [Crystal Lang](https://crystal-lang.org/), and more especially, the [Lucky Framework](https://www.luckyframework.org/). That's how it all began.
 
 ## Being productive
 
@@ -30,7 +30,7 @@ I'm a doer. I've been a doer of web stuff since 20 years now (😱) and I love w
 
 ## What I do and don't love
 
-### The good
+### The pros
 
 So for me, here are the main selling points of Crystal Lang:
 
@@ -43,7 +43,7 @@ So for me, here are the main selling points of Crystal Lang:
 - Is __easy__ to learn
 - Has a __welcoming__ friendly community
 
-### The less good
+### The cons
 
 And here are the main difficulties (IMHO) with the language right now:
 
@@ -62,7 +62,7 @@ Here are some __concrete examples__:
 - I want to __highlight code__ on the backend in my posts. I plan to use [noir](https://shardbox.org/shards/noir) a port of a Ruby Gem called Rouge, the one used for Jekyll. If it doesn't support the language I want to highlight, I will just have to port the lexer from Rouge.
 - I had troubles with my Lucky project regarding many2many relations. I asked a question on the Discord server, and the problem was solved very fast.
 
-## The conclusion
+## Conclusion
 
 Should you give it a try? Definitively! It's __very fun__ to write Crystal Lang code. I've rewritten the [engine of this blog](https://github.com/vjousse/lucky-blog) in a few days from scratch and it was a real pleasure to do so.
 

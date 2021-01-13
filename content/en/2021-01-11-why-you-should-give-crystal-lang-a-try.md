@@ -59,7 +59,7 @@ Was it a show stopper for me? Not at all because :
 
 Here are some __concrete examples__:
 - I wanted to __parse markdown files__ coming from [Nikola](https://getnikola.com/). I used the [markd shard](https://shardbox.org/shards/markd) (that's how libs are called in Crystal, _shards_) with some [custom parsing](https://github.com/vjousse/lucky-blog/blob/master/src/markdown/parser.cr).
-- I want to __highlight code__ on the backend in my posts. I plan to use [noir](https://shardbox.org/shards/noir) a port of a Ruby Gem called Rouge, the one used for Jekyll. If it doesn't support the language I want to highlight, I will just have to port the lexer from Rouge.
+- I wanted to __highlight code__ on the backend in my posts. I plan to use [noir](https://shardbox.org/shards/noir) a port of a Ruby Gem called Rouge, the one used for Jekyll. If it doesn't support the language I want to highlight, I will just have to port the lexer from Rouge.
 - I had troubles with my Lucky project regarding many2many relations. I asked a question on the Discord server, and the problem was solved very fast.
 
 ## Conclusion

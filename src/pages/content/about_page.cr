@@ -29,14 +29,6 @@ class Content::AboutPage < GuestLayout
       end
       ul class: "list-none" do
         li do
-          text "✓ I'm the "
-          strong do
-            text "CTO of "
-            a "Allo-media", href: "https://allo-media.fr"
-          end
-          text "."
-        end
-        li do
           text "✓ I'm "
           strong "coding using Python, Rust, Crystal and Elm"
           text " on "

@@ -73,4 +73,4 @@ Here are my feeling compared to other popular languages:
 - Compared to __Elm__: I wish I could write elm code on the backend!
 - Compared to __Elixir__: __Crystal's compiler__ is so helpful. Even if fibers are great with Crystal, Elixir's concurrency and reliability is way better (especially the actor system and let it crash philosophy).
 
-I'll give Crystal Lang a try for my next projects for sure and I'll try to keep you posted!
+You should give Crystal Lang a try if you want a language that helps you to write code that is fast and reliable. If you love the web, you should also give [Lucky Framework](https://www.luckyframework.org/) a try. The documentation is very well done and people on the discord server are very (very) welcoming.

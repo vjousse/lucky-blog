@@ -10,7 +10,7 @@ class Blog::PostPage < GuestLayout
   def content
     article class: "line-numbers flex flex-col justify-center tracking-tight text-justify leading-relaxed text-xl" do
       header class: "flex flex-col" do
-        h1 title, class: "text-5xl font-serif font-bold pt-20 pb-16 text-center"
+        h1 title, class: "text-5xl font-serif font-bold pt-20 pb-16 text-center leading-normal"
 
         div class: "text-gray-500 pb-6 italic text-center" do
           time "#{published_at.to_s("%d-%m-%Y")}", datetime: "#{published_at.to_s("%d-%m-%Y")}", class: "inline text-italic"

@@ -18,6 +18,7 @@ module.exports = {
         'light-gray': 'rgb(230, 230, 230)',
         'content-color': 'rgb(85, 88, 90)',
         'title-color': 'rgb(43, 43, 43)',
+        'nav-color': 'rgb(164, 158, 152)',
       }
     },
     fontFamily: {

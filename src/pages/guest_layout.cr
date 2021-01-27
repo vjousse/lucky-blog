@@ -61,10 +61,20 @@ abstract class GuestLayout
 
         main class: "container mx-auto px-10 lg:px-64" do
           content
+
+
+          div class: " p-10  py-24  flex  flex-col  flex-wrap  justify-center  content-center" do
+            div "Get My Updates", class: " m-0  p-0  text-3xl  antialiased  text-center"
+            div class: " mt-3  flex  flex-row  flex-wrap" do
+              input class: " text-gray-600  w-2/3  p-2  rounded-l-lg border-solid border", placeholder: "your@mail.com", type: "text"
+              button "Subscribe", class: " p-2  w-1/3  bg-indigo-400  rounded-r-lg  text-white hover: bg-indigo-300", type: "button"
+            end
+          end
+
+
         end
 
-        footer class: "py-12" do
-        end
+
       end
     end
   end

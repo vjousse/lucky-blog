@@ -1,4 +1,4 @@
-class LoadPosts < LuckyCli::Task
+class LoadPosts < LuckyTask::Task
   summary "Loads posts from markdown files"
 
   arg :lang, "Specify the lang of the posts to load",

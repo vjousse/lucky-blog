@@ -1,4 +1,4 @@
-class UserBox < Avram::Box
+class UserBox < Avram::Factory
   def initialize
     email "#{sequence("test-email")}@example.com"
     encrypted_password Authentic.generate_encrypted_password("password")

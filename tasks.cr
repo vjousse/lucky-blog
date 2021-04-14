@@ -1,3 +1,5 @@
+ENV["LUCKY_TASK"] = "true"
+
 # This file loads your app and all your tasks when running 'lucky'
 #
 # Run 'lucky --help' to see all available tasks.
@@ -7,6 +9,8 @@
 
 # Load Lucky and the app (actions, models, etc.)
 require "./src/app"
+
+require "lucky_task"
 
 # You can add your own tasks here in the ./tasks folder
 require "./tasks/**"

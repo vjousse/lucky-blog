@@ -15,5 +15,8 @@ Lucky::CookieJar.configure do |settings|
     # You can set other defaults for cookies here. For example:
     #
     #    cookie.expires(1.year.from_now).domain("mydomain.com")
+
+    # Add this line. See ref: https://github.com/crystal-lang/crystal/pull/10491
+    cookie.path("/")
   }
 end

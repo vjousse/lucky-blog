@@ -9,10 +9,19 @@ class Blog::Index < BrowserAction
     if settings.lang_to_display == "all"
       posts = PostQuery.new.published_at.desc_order
     else
-      if settings.lang_to_display == "fr"
+      if settings.lang_to_display == Post::Lang.new(:fr).to_s.downcase
         lang_to_display = Post::Lang.new(:fr).value
-      else
+      elsif settings.lang_to_display == Post::Lang.new(:en).to_s.downcase
         lang_to_display = Post::Lang.new(:en).value
+      else
+        # Get the value from the session set by the detect_lang mixin
+        if lang = session.get?(:lang)
+          Log.debug { "We should get the value from the session #{lang}" }
+          lang_to_display = Post::Lang.new(lang).value
+        else
+          lang_to_display = Post::Lang.new(:fr).value
+        end
+
       end
 
       posts = PostQuery.new.lang(lang_to_display).published_at.desc_order

@@ -26,7 +26,7 @@ abstract class GuestLayout
       mount Shared::LayoutHead, page_title: page_title, context: context
 
       body do
-        nav class: "flex items-center justify-between flex-wrap p-6 lg:px-12 relative text-nav-color" do
+        nav class: "container flex items-center justify-between flex-wrap p-6 lg:px-64 relative text-nav-color mx-auto" do
           div class: "flex items-center flex-shrink-0 mr-6" do
             a class: "font-bold font-serif text-3xl tracking-tight", href: "/" do
               text "Vince's"
@@ -38,6 +38,21 @@ abstract class GuestLayout
                 link "Articles",
                   to: Blog::Index, class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900"
               end
+              li class: "ml-4 mr-4 text-gray-400" do
+                text "|"
+              end
+              li do
+                link "Fr",
+                  to: Lang::Change.with("fr"), class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900"
+              end
+              li class: "ml-4 mr-4 text-gray-400" do
+                text "|"
+              end
+              li do
+                link "En",
+                  to: Lang::Change.with("en"), class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900"
+              end
+
               li class: "ml-4 mr-4 text-gray-400" do
                 text "|"
               end

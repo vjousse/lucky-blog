@@ -9,7 +9,7 @@ class Blog::IndexPage < GuestLayout
         ul class: "text-xl" do
           posts.each do |post|
             li class: "list-none pb-10" do
-              link to: Blog::PostDetail.with(post_slug: post.slug) do
+              link to: Blog::PostDetail.with(post_slug: post.slug, lang: post.lang.to_s.downcase) do
                 h2 post.title
               end
 
@@ -29,7 +29,7 @@ class Blog::IndexPage < GuestLayout
                 end
 
                 div class: "text-right italic" do
-                  link to: Blog::PostDetail.with(post_slug: post.slug) do
+                  link to: Blog::PostDetail.with(post_slug: post.slug, lang: post.lang.to_s.downcase) do
                     if post.lang.value === Post::Lang.new(:fr).value
                       text "Lire la suite >>"
                     else

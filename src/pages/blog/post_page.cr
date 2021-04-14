@@ -8,9 +8,9 @@ class Blog::PostPage < GuestLayout
   end
 
   def content
-    article class: "line-numbers flex flex-col justify-center tracking-tight text-justify leading-relaxed text-xl" do
+    article class: "line-numbers flex flex-col justify-center tracking-tight text-justify leading-relaxed text-lg" do
       header class: "flex flex-col" do
-        h1 title, class: "text-5xl font-serif font-bold pt-20 pb-16 text-center leading-normal"
+        h1 title, class: "text-4xl font-serif font-bold pt-20 pb-16 text-center leading-normal"
 
         div class: "text-gray-500 pb-6 italic text-center" do
           time "#{published_at.to_s("%d-%m-%Y")}", datetime: "#{published_at.to_s("%d-%m-%Y")}", class: "inline text-italic"

@@ -43,14 +43,14 @@ abstract class GuestLayout
               end
               li do
                 link "Fr",
-                  to: Lang::Change.with("fr"), class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900"
+                  to: Blog::Index, class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900"
               end
               li class: "ml-4 mr-4 text-gray-400" do
                 text "|"
               end
               li do
                 link "En",
-                  to: Lang::Change.with("en"), class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900"
+                  to: Blog::IndexEn, class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900"
               end
 
               li class: "ml-4 mr-4 text-gray-400" do

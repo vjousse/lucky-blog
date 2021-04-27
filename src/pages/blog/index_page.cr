@@ -4,13 +4,13 @@ class Blog::IndexPage < GuestLayout
   needs posts : PostQuery
 
   def content
-    div class: "flex flex-col justify-center tracking-tight text-justify leading-relaxed pt-10" do
+    div class: "flex flex-col justify-center tracking-tight text-justify leading-relaxed pt-20" do
       if posts.size > 0
         ul class: "text-xl" do
           posts.each do |post|
-            li class: "list-none pb-10" do
+            li class: "list-none pb-20" do
               link to: Blog::PostDetail.with(post_slug: post.slug, lang: post.lang.to_s.downcase) do
-                h2 post.title
+                h2 post.title, class:"font-serif"
               end
 
               div class: "text-gray-500 italic text-left text-sm" do
@@ -28,7 +28,7 @@ class Blog::IndexPage < GuestLayout
                   raw html_teaser
                 end
 
-                div class: "text-right italic" do
+                div class: "text-right" do
                   link to: Blog::PostDetail.with(post_slug: post.slug, lang: post.lang.to_s.downcase) do
                     if post.lang.value === Post::Lang.new(:fr).value
                       text "Lire la suite >>"

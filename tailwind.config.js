@@ -19,19 +19,19 @@ module.exports = {
         'content-color': 'rgb(85, 88, 90)',
         'title-color': 'rgb(43, 43, 43)',
         'nav-color': 'rgb(164, 158, 152)',
-      }
+      },
     },
     fontFamily: {
-      'sans': 'Open Sans',
-      'serif': 'Merriweather',
-      'title': 'Merriweather',
-      'body': 'Open Sans',
+      sans: 'Source Sans Pro',
+      serif: 'Playfair Display',
+      title: 'Playfair Display',
+      body: 'Source Sans Pro',
     },
     inset: {
       '50': '50%',
       '-50': '-50%',
-    }
+    },
   },
   variants: {},
   plugins: [],
-}
+};

@@ -8,7 +8,7 @@ class Blog::PostPage < GuestLayout
   end
 
   def content
-    article class: "line-numbers flex flex-col justify-center tracking-tight text-justify leading-relaxed text-lg" do
+    article class: "line-numbers flex flex-col justify-center tracking-tight text-justify leading-relaxed text-lg font-sans" do
       header class: "flex flex-col" do
         h1 title, class: "text-4xl font-serif font-bold pt-20 pb-16 text-center leading-normal"
 

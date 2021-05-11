@@ -14,6 +14,7 @@ class Shared::LayoutHead < BaseComponent
       meta name: "turbolinks-cache-control", content: "no-cache"
       csrf_meta_tags
       responsive_meta_tag
+      js_link "https://s.pereprogramming.com/js/pl.js", defer: "true",  data_domain: "vincent.jousse.org", data_turbolinks_track: "reload"
     end
   end
 end

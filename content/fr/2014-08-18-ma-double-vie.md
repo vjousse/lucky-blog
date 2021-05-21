@@ -9,7 +9,7 @@
 .. type: text
 -->
 
-J'ai un truc à vous avouer, je suis un looser. Si je regarde les 15 dernières années de ma vie, ce n'est qu'__échec, déception et malchance__ :
+J'ai un truc à vous avouer, je suis un looser. Si je regarde les 15 dernières années de ma vie, ce n'est qu'__échec, déception et malchance__ :
 <!-- TEASER_END -->
 
 - __Je loupe la mention bien au BAC__ à cause d'un 5 en philo : j'ai oublié de rendre une partie de ma copie que j'ai retrouvée dans mon sac ensuite.
@@ -48,4 +48,4 @@ Choisir un DUT alors qu'on est accepté en école prépa peut sembler être un m
 
 Peu importe à vrai dire. Je n'ai pas choisi tout ce qui est arrivé dans ma vie, par contre __j'ai choisi la manière dont j'y réagissais__.
 
-Et vous, __comment [choisissez-vous de voir votre vie](http://deboutlesgens.com/blog/faire-le-mauvais-choix/)__ ?
+Et vous, __comment [choisissez-vous de voir votre vie](faire-le-mauvais-choix/)__ ?

@@ -22,10 +22,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: 'Source Sans Pro',
-      serif: 'Playfair Display',
-      title: 'Playfair Display',
-      body: 'Source Sans Pro',
+      sans: 'Inter',
+      serif: 'Inter',
     },
     inset: {
       '50': '50%',

@@ -1,25 +1,31 @@
 FROM crystallang/crystal:1.0.0
 
-RUN apt-get update \
-  && apt-get install -y libc6-dev libevent-dev libpcre2-dev libpcre3-dev libpng-dev libssl1.0-dev libyaml-dev zlib1g-dev tmux curl
-
-
-# Install node, yarn and dependencies
-RUN curl -sL https://deb.nodesource.com/setup_lts.x | bash - \
-  && apt-get install -y nodejs
-
-RUN apt-get update && apt-get install -y cmake build-essential libssl-dev libreadline-dev libxml2-dev libcurl4-openssl-dev software-properties-common libffi-dev
-
-RUN npm install --global yarn
-
-# Install Postgres Client Libraries
-RUN apt-get install -y postgresql-common libpq-dev postgresql-client
+COPY ./src/ /app/src/
+COPY ./config /app/config/
+COPY ./db /app/db/
+COPY ./tasks /app/tasks/
+COPY ./public/ /app/public/
+COPY ./shard.yml /app/
+COPY ./tasks.cr /app/
+COPY ./package.json /app/
+COPY ./tailwind.config.js /app/
+COPY ./webpack.mix.js /app/
 
 WORKDIR /app
 
-ADD . /app
+
+RUN apt-get update && apt-get install -y cmake build-essential curl libpq-dev
+
+RUN curl -sL https://deb.nodesource.com/setup_lts.x | bash -
+RUN apt-get install -y nodejs
+RUN npm install --global yarn
+
+RUN shards install
+RUN cd /app && crystal build --release src/start_server.cr
 
 EXPOSE 5000
 
-RUN cd /app && crystal build --release src/start_server.cr
-CMD ["start_server"]
+COPY ./yarn.lock /app/
+RUN yarn install
+RUN yarn prod
+CMD ["/app/start_server"]

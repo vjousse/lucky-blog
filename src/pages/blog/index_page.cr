@@ -20,11 +20,8 @@ class Blog::IndexPage < GuestLayout
               end
 
               if teaser = post.teaser
-                options = Cmark::Option.flags(ValidateUTF8, Smart, Unsafe)
-                html_teaser = Cmark.gfm_to_html(teaser, options)
-
                 div do
-                  raw html_teaser
+                  raw post.teaser_to_html
                 end
 
                 div class: "text-right" do

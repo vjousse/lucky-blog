@@ -22,9 +22,8 @@ services:
     environment:
       POSTGRES_DB: "db"
       POSTGRES_HOST_AUTH_METHOD: "trust"
-    ports:
-      - target: 5432
-        published: 5432
+    #ports:
+    #  - "5432"
     volumes:
       - type: volume
         source: postgres_data_lucky

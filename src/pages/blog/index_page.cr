@@ -1,5 +1,3 @@
-require "markd"
-
 class Blog::IndexPage < GuestLayout
   needs posts : PostQuery
 
@@ -22,7 +20,8 @@ class Blog::IndexPage < GuestLayout
               end
 
               if teaser = post.teaser
-                html_teaser = Markd.to_html(teaser)
+                options = Cmark::Option.flags(ValidateUTF8, Smart, Unsafe)
+                html_teaser = Cmark.gfm_to_html(teaser, options)
 
                 div do
                   raw html_teaser

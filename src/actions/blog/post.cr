@@ -1,4 +1,3 @@
-require "markd"
 
 class Blog::PostDetail < BrowserAction
   include Auth::AllowGuests
@@ -8,7 +7,9 @@ class Blog::PostDetail < BrowserAction
     post = PostQuery.new.slug(post_slug_unescaped).first?
 
     if post
-      html_content = Markd.to_html(post.content.gsub("<p></p>", ""))
+
+      options = Cmark::Option.flags(ValidateUTF8, Smart, Unsafe)
+      html_content = Cmark.gfm_to_html(post.content.gsub("<p></p>", ""), options)
 
       html Blog::PostPage, title: post.title, html_content: html_content, published_at: post.published_at
     else

@@ -1,4 +1,3 @@
-require "markd"
 require "uri"
 require "xml"
 
@@ -49,7 +48,8 @@ abstract class XMLAction < Lucky::Action
               xml.element("dc:creator") { xml.cdata "Vincent Jousse" }
               xml.element("pubDate") { xml.text article.published_at.to_rfc2822 }
               if article.content
-                content = Markd.to_html(article.content.not_nil!)
+                options = Cmark::Option.flags(ValidateUTF8, Smart, Unsafe)
+                content = Cmark.gfm_to_html(article.content.not_nil!, options)
                 xml.element("content:encoded") { xml.cdata content }
               end
             end

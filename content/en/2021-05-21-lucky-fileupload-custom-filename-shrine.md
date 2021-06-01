@@ -17,7 +17,7 @@ On the [Lucky's website](https://luckyframework.org/guides/handling-files/file-u
 
 It's pretty simple to achieve (once you know it 😅), the only thing you have to do is to override the `generate_location` method of the `Shrine` class.
 
-```ruby
+```crystal
 class FileImport::AssetUploader < Shrine
   def generate_location(io : IO | UploadedFile, metadata, **options)
 
@@ -33,14 +33,14 @@ end
 
 Then, you just have to replace the default uploader
 
-```ruby
+```crystal
 result = Shrine.upload(File.new(pic.tempfile.path), "store", metadata: { "filename" => pic.filename })
 ```
 
 with your custom one:
 
 
-```ruby
+```crystal
 result = FileImport::AssetUploader.upload(File.new(pic.tempfile.path), "store", metadata: { "filename" => pic.filename })
 ```
 

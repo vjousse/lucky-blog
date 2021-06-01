@@ -76,6 +76,10 @@ shards:
     git: https://github.com/luckyframework/lucky_task.git
     version: 0.1.0
 
+  noir:
+    git: https://github.com/vjousse/noir.git
+    version: 0.1.0+git.commit.45712748f05e5cfb02d88392b50623b88712a1b7
+
   openssl_ext:
     git: https://github.com/spider-gazelle/openssl_ext.git
     version: 2.1.4
@@ -94,7 +98,7 @@ shards:
 
   shell-table:
     git: https://github.com/luckyframework/shell-table.cr.git
-    version: 0.9.2+git.commit.ad72379f241ba28698ca2873d9b43785324a7932
+    version: 0.9.3+git.commit.fefbc8b19d18630660b2653de755217597808b1b
 
   teeplate:
     git: https://github.com/luckyframework/teeplate.git

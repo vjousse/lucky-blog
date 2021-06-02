@@ -6,15 +6,17 @@ services:
       context: .
       dockerfile: Dockerfile.prod
 
-    entrypoint: /bin/bash
-    stdin_open: true # docker run -i
-    tty: true        # docker run -t
+    env_file:
+      - .env.production
+
+    #entrypoint: /bin/bash
+    #stdin_open: true # docker run -i
+    #tty: true        # docker run -t
 
     ports:
-      - "5000:5000"
-      - "3001:3001"
+      - "5001:5001"
     volumes:
-      - .:/app
+      - ./content/:/app/content/
     depends_on:
       - db
     environment:
@@ -33,5 +35,3 @@ services:
 
 volumes:
   postgres_data_lucky:
-
-# docker-compose run --rm web

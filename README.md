@@ -10,7 +10,9 @@ This is a project written using [Lucky](https://luckyframework.org). Enjoy!
 1. Run `lucky dev` to start the app
 
 
-## Using docker
+## Docker
+
+### For dev purposes
 
 Build images
 
@@ -40,6 +42,39 @@ Reset test database (after migradion)
 
     docker-compose exec --env LUCKY_ENV=test web lucky db.drop
 
+### For production and deploy
+
+Build the images
+
+    docker-compose -f docker-compose-prod.yml build
+
+Tweak `.env.production` values
+
+
+    LUCKY_ENV=production
+    SECRET_KEY_BASE=eQ314uYO30d0OtNnWqAtsuXPZmD70Rc3xTY0AJrjbt4=
+    SEND_GRID_KEY=unused
+    DATABASE_URL=postgresql://postgres:postgres@db/vinces_production
+    HOST=0.0.0.0
+    PORT=5001
+    APP_DOMAIN=https://vincent.jousse.org
+
+Create the production database
+
+    docker-compose exec db createdb -U postgres vinces_production
+
+
+Run the images
+
+    docker-compose -f docker-compose-prod.yml up
+
+Run the migrations
+
+    docker-compose exec web crystal run tasks.cr -- db.migrate
+
+Load the posts
+
+    docker-compose exec web crystal run tasks.cr -- load_posts -l fr -d content/fr/
 
 ## Deploying the project
 

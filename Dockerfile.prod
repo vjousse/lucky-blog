@@ -5,6 +5,7 @@ COPY ./config /app/config/
 COPY ./db /app/db/
 COPY ./tasks /app/tasks/
 COPY ./public/ /app/public/
+COPY ./spec/ /app/spec/
 COPY ./shard.yml /app/
 COPY ./tasks.cr /app/
 COPY ./package.json /app/

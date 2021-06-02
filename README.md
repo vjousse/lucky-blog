@@ -59,14 +59,13 @@ Tweak `.env.production` values
     PORT=5001
     APP_DOMAIN=https://vincent.jousse.org
 
-Create the production database
-
-    docker-compose exec db createdb -U postgres vinces_production
-
-
 Run the images
 
     docker-compose -f docker-compose-prod.yml up
+
+Create the production database
+
+    docker-compose exec db createdb -U postgres vinces_production
 
 Run the migrations
 

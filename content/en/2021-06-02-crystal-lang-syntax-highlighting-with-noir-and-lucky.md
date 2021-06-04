@@ -156,6 +156,8 @@ Copy paste the content to your CSS file, and you're done. Here is [a direct link
 
 ## Conclusion
 
-Crystal and NOIR provide a __solid fundation to highlight code__ on the server side. Even if only 7 languages are available for now (crystal, css, html, javascript, json, python, ruby) it should be straightforward to port other languages using some [examples from Rouge](https://github.com/rouge-ruby/rouge/tree/master/lib/rouge/lexers).
+Crystal and NOIR provide a __solid fundation to highlight code__ on the server side. Even if only 7 languages are available for now (`crystal`, `css`, `html`, `javascript`, `json`, `python`, `ruby`) it should be straightforward to port other languages using some [examples from Rouge](https://github.com/rouge-ruby/rouge/tree/master/lib/rouge/lexers).
+
+I really enjoy playing around with the Crystal libs out there. It looks like Crystal just need a little bit more ❤️ to be the new defacto "__dynamic language with an useful compiler__".
 
 That's all for today folks. Don't hesitate to [reach out to me](/about) if you have any question. Enjoy! 🎉

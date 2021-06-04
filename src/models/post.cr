@@ -39,15 +39,12 @@ class PostHTMLRenderer < Cmark::HTMLRenderer
       end
 
       theme = Noir.find_theme("monokai").not_nil!
-
       formatter_out : IO = IO::Memory.new
 
       if lexer = Noir.find_lexer(language_name)
-
         Noir.highlight node.literal,
           lexer: lexer,
           formatter: Noir::Formatters::HTML.new formatter_out
-
         out formatter_out.to_s
       else
         Log.info { "Lexer for '#{language_name}' not found." }
@@ -55,7 +52,6 @@ class PostHTMLRenderer < Cmark::HTMLRenderer
       end
 
     end
-
 
     out "</code></pre>\n"
   end

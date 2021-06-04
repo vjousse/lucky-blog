@@ -26,16 +26,15 @@ abstract class GuestLayout
       mount Shared::LayoutHead, page_title: page_title, context: context
 
       body do
-        nav class: "container flex items-center justify-between flex-wrap p-6 lg:px-64 relative text-nav-color mx-auto" do
+        nav class: "container flex items-center justify-between flex-wrap p-6 lg:px-64 relative text-gray-400 mx-auto" do
           div class: "flex items-center flex-shrink-0 mr-6" do
             a class: "font-bold font-serif text-3xl tracking-tight", href: "/" do
-              text "Vince's"
             end
           end
           div class: "w-full block lg:flex lg:items-end lg:w-auto" do
             ul class: "flex text-lg font-sans-serif align-text-bottom items-center" do
               li do
-                link "Articles",
+                link "Home",
                   to: Blog::Index, class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900"
               end
               li class: "ml-4 mr-4 text-gray-400" do

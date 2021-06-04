@@ -8,7 +8,7 @@ class Blog::IndexPage < GuestLayout
           posts.each do |post|
             li class: "list-none pb-20" do
               link to: Blog::PostDetail.with(post_slug: post.slug, lang: post.lang.to_s.downcase) do
-                h2 post.title, class:"font-serif"
+                h2 post.title, class:"font-serif font-semibold"
               end
 
               div class: "text-gray-500 italic text-left text-sm" do

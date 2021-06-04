@@ -17,6 +17,8 @@ services:
       - "5001:5001"
     volumes:
       - ./content/:/app/content/
+      - ./public/images/:/app/public/images/
+      - ./public/resources/:/app/public/resources/
     depends_on:
       - db
     environment:

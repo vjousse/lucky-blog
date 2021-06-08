@@ -13,13 +13,13 @@ On a trop tendance à oublier l'__importance de prendre le temps d'être fier de
 
 <!-- TEASER_END -->
 
-# Prenez conscience
+## Prenez conscience
 
 J'ai trop souvent vu des personnes être déçues d'elles-mêmes : « _je ne suis bon(ne) à rien_ », « _je suis vraiment trop nul(le)_ », « _je n'y arriverai jamais_ ». Ce sont des propos qui me glacent le sang, aussi bien par leur inutilité que par leur __violence__. Faites l'exercice de changer le sujet de ces phrases, et adressez-vous à votre ami(e), collègue, voisin(e) : « tu es bon(nne) à rien », « t'es vraiment trop nul(le) », « tu n'y arriveras jamais ».
 
 Naturellement, vous adresseriez-vous à votre collègue de cette manière ? À quelques exceptions prêt, laissez-moi en douter. Alors pourquoi le faites-vous pour vous-mêmes ? Nous sommes souvent __beaucoup plus dur avec nous-mêmes que les autres ne le sont__. De base, nous avons tendance à être notre pire juge, alors pas la peine d'en rajouter !
 
-# Prenez le temps
+## Prenez le temps
 
 S'il peut être difficile de changer ces habitudes d'auto flagellation solidement ancrées, il est un peu plus facile de prendre le temps d'être fier de soi. Oh ne croyez pas qu'il faut un grand exploit à fêter pour pouvoir enfin être fier de soi. Que nenni ! Il faut juste __prendre le temps__ de se poser, et __s'autoriser à être fier__. Je ne parle pas de narcissisme ici, juste de se donner l'autorisation d'exprimer sa propre fierté. Consolider ce que l'on est, en prenant le temps de l'apprécier.
 

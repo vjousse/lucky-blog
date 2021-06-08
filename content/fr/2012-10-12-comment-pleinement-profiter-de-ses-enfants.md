@@ -17,7 +17,11 @@
 
 <p>Nous avons toujours de bonnes raisons de ne pas « avoir le temps » de s'occuper d'eux :</p>
 
-<p><ul><br /><li>On a énormément de choses à faire au travail</li><br /><li>On a plein de jeux de console/ordinateur à finir</li><br /><li>On a truc super important à faire sur l'ordinateur</li><br /><li>On a une soirée entre potes</li><br /><li>On est fatigué</li><br /></ul></p>
+- On a énormément de choses à faire au travail
+- On a plein de jeux de console/ordinateur à finir
+- On a truc super important à faire sur l'ordinateur
+- On a une soirée entre potes
+- On est fatigué
 
 <p>Et avec toutes ces activités, jouer ou passer du temps avec ses enfants est parfois très difficile et pas toujours un plaisir, car nous avons tout simplement <strong>la tête ailleurs</strong>. Ces sentiments de « culpabilité » ou de « mal-être » sont souvent signe qu'il faut changer quelque chose dans notre comportement.</p>
 

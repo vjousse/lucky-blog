@@ -77,7 +77,7 @@ Quand bien même serait-il possible de transcrire ces 300H+ d'audio, il reste un
 
 Exit donc la plupart des vidéos Youtube, des podcast de radio, des émissions de télé. Ça fait qu'il n'en reste pas lourd.
 
-# Et donc ?
+## Et donc ?
 
 Il est donc important de comprendre que le __nerf de la guerre, c'est maintenant les données__. C'est très vrai pour les entreprises, ça l'est encore plus pour le monde du logiciel libre. Les entreprises peuvent mettre les moyens, le monde du logiciel libre beaucoup moins.
 

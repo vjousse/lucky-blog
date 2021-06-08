@@ -53,7 +53,6 @@ Modify your `webpack.mix.js` by adding a `postCss` plugin for tailwind in the `o
 You can test it by adding a button to some of your lucky pages. Adding the following code:
 
 ```crystal
-
 button class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" do
   text " Button "
 end

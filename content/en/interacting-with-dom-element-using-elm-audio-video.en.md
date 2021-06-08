@@ -20,7 +20,7 @@ We could do everything using [JS ports](http://guide.elm-lang.org/interop/javasc
 
 _Note_: Another alternative would be writing [Native modules](https://github.com/elm-lang/core/tree/master/src/Native) to wrap the missing parts into some Elm greatness. But as doing so should be avoided (Native is subject to change and is not documented), this will not be covered here.
 
-# One file example
+## One file example
 
 For this tutorial, we are using Elm `0.17`.
 
@@ -35,7 +35,7 @@ Let's start with a minimal Elm program:
 `Main.elm` [(view code)](https://github.com/vjousse/blog-nikola/blob/master/code/elm-audio/skeleton/Main.elm) 
 
 
-```Elm
+```elm
 module Main exposing (..)
 
 import Html exposing (Attribute, Html, audio, div, text)
@@ -112,7 +112,7 @@ Open the generated `index.html` in your browser. You should see the default audi
 
 Let's say that we want to display the `currentTime` property of the audio element just below it. Let's add it to the model as a `Float`:
 
-```Elm
+```elm
 type alias Model =
     { mediaUrl : String
     , mediaType : String
@@ -124,7 +124,7 @@ We could as well use a `Maybe Float` here (and we certainly should). It would al
 
 Then init the currentTime to `0`:
 
-```Elm
+```elm
 init =
     { mediaUrl = "http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg"
     , mediaType = "audio/ogg"
@@ -135,7 +135,7 @@ init =
 
 And display it in the view:
 
-```Elm
+```elm
 
 view : Model -> Html Msg
 view model =
@@ -156,13 +156,13 @@ Everytime the `timeupdate` event of the `audio` tag will be triggered, we will c
 
 Start by importing the needed module:
 
-```Elm
+```elm
 import Html.Events exposing (on)
 ```
 
 Create a new message type that will be triggered at each timeupdate:
 
-```Elm
+```elm
 -- MSG
 
 type Msg
@@ -172,7 +172,7 @@ type Msg
 
 Update the model when such a message is received:
 
-```Elm
+```elm
 -- UPDATE
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -187,7 +187,7 @@ update msg model =
 
 Then add the custom event handler and the JSON decoder below your update function:
 
-```Elm
+```elm
 -- Custom event handler
 
 onTimeUpdate : (Float -> msg) -> Attribute msg
@@ -209,7 +209,7 @@ This custom event handler uses the Json decoder `targetCurrentTime` to read a `F
 
 Finally, make use of this new event handler in your `view`:
 
-```Elm
+```elm
 -- VIEW
 
 
@@ -241,7 +241,7 @@ Let's say we want to add a button that will set the current time of the player a
 
 First, let's declare that our module will contain some ports:
 
-```Elm
+```elm
 port module Main exposing (..)
 ```
 
@@ -249,7 +249,7 @@ Usually, you will only declare one `port module` in your application, registerin
 
 Then, as we will add a `button` and manage an `onClick` event, add the needed imports at the top of your file:
 
-```Elm
+```elm
 import Html exposing (Attribute, Html, audio, div, text, button)
 import Html.Attributes exposing (class, controls, type', src, id)
 import Html.App as App
@@ -259,7 +259,7 @@ import Json.Decode as Json
 
 We will add a new message for the set time functionality:
 
-```Elm
+```elm
 type Msg
     = NoOp
     | TimeUpdate Float
@@ -268,7 +268,7 @@ type Msg
 
 And we will emit this message when clicking on a button in our view:
 
-```Elm
+```elm
 view : Model -> Html Msg
 view model =
     div [ class "elm-audio-player" ]
@@ -287,7 +287,7 @@ view model =
 
 We now need to handle this message in our update function like this:
 
-```Elm
+```elm
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
@@ -306,7 +306,7 @@ Notice that, in the `SetPlayerTime newTime` branch, we are not updating the mode
 
 This `setCurrentTime` function is actually a port, that we need to define somewhere:
 
-```Elm
+```elm
 
 -- PORT
 
@@ -327,7 +327,7 @@ In order to communicate between JS and Elm, we will need to add some Javascript 
 
 Then, open your `index.html` file and change it as follows:
 
-```Elm
+```html
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -359,13 +359,13 @@ Open the `index.html` in your browser, and you should be able to force the curre
 View the code of the resulting `index.html` [on github.](https://github.com/vjousse/blog-nikola/blob/master/code/elm-audio/ports/index.html) 
 
 
-# Example using components
+## Example using components
 
 I'm always frustrated with blog posts (like this one) giving simple examples, but without showing how to integrate it in a *more complex application*. So I took the time to integrate the above code using child/parent components and the elm architecture.
 
 I will not discuss the child/parent communication because [other people like Brian Hicks are already doing it very well](https://www.brianthicks.com/post/2016/06/23/candy-and-allowances-parent-child-communication-in-elm/). I will just give you the link to the code so that you can play with it by yourself : [code example on github](https://github.com/vjousse/blog-nikola/tree/master/code/elm-audio/ports-elm-arch).
 
-# Wrapping Up
+## Wrapping Up
 
 We just saw how to communicate with an HTML audio tag using Elm and javascript ports. This technique can of course be applied to every DOM element. You will find a [nice article by Søren Debois](https://medium.com/@debois/elm-the-dom-8c9883190d20#.mcmenrms8) explaining how he is using it to get the dimensions of DOM elements on the page.
 

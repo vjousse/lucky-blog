@@ -7,6 +7,7 @@ require "noir/lexers/javascript"
 require "noir/lexers/json"
 require "noir/lexers/python"
 require "noir/lexers/ruby"
+require "noir/lexers/yaml"
 
 class PostHTMLRenderer < Cmark::HTMLRenderer
     def code(node)

@@ -77,8 +77,8 @@ shards:
     version: 0.1.0
 
   noir:
-    git: https://github.com/vjousse/noir.git
-    version: 0.1.0+git.commit.45712748f05e5cfb02d88392b50623b88712a1b7
+    git: https://github.com/makenowjust/noir.git
+    version: 0.1.0+git.commit.90925634645f529432ae32e65dc48ef9a19aef80
 
   openssl_ext:
     git: https://github.com/spider-gazelle/openssl_ext.git

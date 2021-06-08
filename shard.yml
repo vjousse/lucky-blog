@@ -32,7 +32,7 @@ dependencies:
   cmark:
     github: amauryt/cr-cmark-gfm
   noir:
-    github: vjousse/noir
+    github: MakeNowJust/noir
 
 development_dependencies:
   ameba:

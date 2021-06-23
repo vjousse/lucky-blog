@@ -1,5 +1,11 @@
 FROM crystallang/crystal:1.0.0
 
+RUN apt-get update && apt-get install -y cmake build-essential curl libpq-dev
+
+RUN curl -sL https://deb.nodesource.com/setup_lts.x | bash -
+RUN apt-get install -y nodejs
+RUN npm install --global yarn
+
 COPY ./src/ /app/src/
 COPY ./config /app/config/
 COPY ./db /app/db/
@@ -13,13 +19,6 @@ COPY ./tailwind.config.js /app/
 COPY ./webpack.mix.js /app/
 
 WORKDIR /app
-
-
-RUN apt-get update && apt-get install -y cmake build-essential curl libpq-dev
-
-RUN curl -sL https://deb.nodesource.com/setup_lts.x | bash -
-RUN apt-get install -y nodejs
-RUN npm install --global yarn
 
 RUN shards install
 RUN cd /app && crystal build --release src/start_server.cr

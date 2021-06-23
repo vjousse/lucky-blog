@@ -33,17 +33,17 @@ abstract class GuestLayout
           end
           div class: "w-full block lg:flex lg:items-end lg:w-auto" do
             ul class: "flex text-lg font-sans-serif align-text-bottom items-center" do
-              li class: "mt-1" do
-                link to: Blog::Index, class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900" do
+#              li class: "mt-1" do
+#                link to: Blog::Index, class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900" do
 
-                tag "svg", class: "h-6 w-6", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" do
-                tag "path", d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6", stroke_linecap: "round", stroke_linejoin: "round", stroke_width: "2"
-end
-                end
-              end
-              li class: "ml-4 mr-4 text-gray-400" do
-                text "|"
-              end
+#                tag "svg", class: "h-6 w-6", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" do
+#                tag "path", d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6", stroke_linecap: "round", stroke_linejoin: "round", stroke_width: "2"
+#end
+#                end
+#              end
+#              li class: "ml-4 mr-4 text-gray-400" do
+#                text "|"
+#              end
               li do
                 link "Fr",
                   to: Blog::IndexFr, class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900"
@@ -56,13 +56,6 @@ end
                   to: Blog::IndexEn, class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900"
               end
 
-              li class: "ml-4 mr-4 text-gray-400" do
-                text "|"
-              end
-              li do
-                link "Research",
-                  to: Content::Research, class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900"
-              end
               li class: "ml-4 mr-4 text-gray-400" do
                 text "|"
               end

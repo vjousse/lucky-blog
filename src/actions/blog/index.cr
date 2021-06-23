@@ -6,9 +6,18 @@ class Blog::Index < BrowserAction
   end
 
   get "/blog" do
-    #redirect Home::Index
 
-    posts = PostQuery.new.lang(Post::Lang.new(:en).value).published_at.desc_order
+    query = PostQuery.new
+
+    if session_lang = session.get(:lang)
+      query = query.lang(Post::Lang.new(session_lang).value)
+    else
+      if settings.lang_to_display != "all"
+        query = query.lang(Post::Lang.new(settings.lang_to_display).value)
+      end
+    end
+
+    posts = query.published_at.desc_order
 
     html Blog::IndexPage, posts: posts
   end

@@ -59,13 +59,6 @@ end
               li class: "ml-4 mr-4 text-gray-400" do
                 text "|"
               end
-              li do
-                link "Research",
-                  to: Content::Research, class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900"
-              end
-              li class: "ml-4 mr-4 text-gray-400" do
-                text "|"
-              end
               li class: "mt-1" do
                 link to: Content::About, title: "About", class: "block mt-4 lg:inline-block lg:mt-0 hover:text-red-900" do
                   tag "svg", class: "h-6 w-6", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" do

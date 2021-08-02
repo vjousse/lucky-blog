@@ -1,7 +1,7 @@
-FROM crystallang/crystal:1.0.0
+FROM crystallang/crystal:1.1.1
 
 RUN apt-get update \
-  && apt-get install -y libc6-dev libevent-dev libpcre2-dev libpcre3-dev libpng-dev libssl1.0-dev libyaml-dev zlib1g-dev tmux curl
+  && apt-get install -y libc6-dev libevent-dev libpcre2-dev libpcre3-dev libpng-dev libyaml-dev zlib1g-dev tmux curl
 
 
 # Install node, yarn and dependencies

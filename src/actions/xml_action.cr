@@ -58,6 +58,6 @@ abstract class XMLAction < Lucky::Action
         end
       end
     end
-    Lucky::TextResponse.new(context, content_type: "application/rss+xml; charset=utf-8", body: string status: 200)
+    Lucky::TextResponse.new(context, content_type: "application/rss+xml; charset=utf-8", body: string, status: 200)
   end
 end

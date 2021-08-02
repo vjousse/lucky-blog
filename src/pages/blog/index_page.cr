@@ -26,7 +26,7 @@ class Blog::IndexPage < GuestLayout
 
                 div class: "text-right" do
                   link to: Blog::PostDetail.with(post_slug: post.slug, lang: post.lang.to_s.downcase) do
-                    if post.lang.value === Post::Lang.new(:fr).value
+                    if post.lang.value === Post::Lang::Fr
                       text "Lire la suite >>"
                     else
                       text "Read more >>"

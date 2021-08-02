@@ -8,21 +8,21 @@ targets:
   vinces:
     main: src/my_app.cr
 
-crystal: 1.0.0
+crystal: ">= 1.0.0"
 
 dependencies:
   lucky:
     github: luckyframework/lucky
-    version: ~> 0.27.0
+    version: ~> 0.28.0
   authentic:
     github: luckyframework/authentic
-    version: ~> 0.7.3
+    version: ~> 0.8.0
   carbon:
     github: luckyframework/carbon
-    version: ~> 0.1.4
-  dotenv:
-    github: gdotdesign/cr-dotenv
-    version: ~> 1.0.0
+    version: ~> 0.2.0
+  lucky_env:
+    github: luckyframework/lucky_env
+    version: ~> 0.1.3
   jwt:
     github: crystal-community/jwt
     version: ~> 1.5.1
@@ -33,6 +33,8 @@ dependencies:
     github: amauryt/cr-cmark-gfm
   noir:
     github: MakeNowJust/noir
+  carbon_sendgrid_adapter:
+    github: luckyframework/carbon_sendgrid_adapter
 
 development_dependencies:
   ameba:

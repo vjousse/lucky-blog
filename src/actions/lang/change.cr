@@ -5,7 +5,7 @@ class Lang::Change < BrowserAction
 
     session.set(:lang, lang)
 
-    Log.debug { Post::Lang.new(lang).value }
+    Log.debug { Post::Lang }
 
     redirect_back fallback: Home::Index
   end

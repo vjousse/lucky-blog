@@ -23,7 +23,7 @@ abstract class GuestLayout
     html_doctype
 
     html lang: "en" do
-      mount Shared::LayoutHead, page_title: page_title, context: context
+      mount Shared::LayoutHead, page_title: page_title
 
       body do
         nav class: "container flex items-center justify-between flex-wrap p-6 lg:px-64 relative text-gray-400 mx-auto" do

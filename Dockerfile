@@ -18,7 +18,7 @@ RUN apt-get install -y postgresql-common libpq-dev postgresql-client
 
 RUN git clone https://github.com/luckyframework/lucky_cli \
   && cd lucky_cli \
-  && git checkout v0.27.0 \
+  && git checkout v0.28.0 \
   && shards install \
   && crystal build src/lucky.cr \
   && mv lucky /usr/local/bin \

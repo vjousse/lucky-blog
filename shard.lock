@@ -6,23 +6,31 @@ shards:
 
   authentic:
     git: https://github.com/luckyframework/authentic.git
-    version: 0.7.3
+    version: 0.8.0
 
   avram:
     git: https://github.com/luckyframework/avram.git
-    version: 0.20.0
+    version: 0.21.0
+
+  backtracer:
+    git: https://github.com/sija/backtracer.cr.git
+    version: 1.2.1
 
   bindata:
     git: https://github.com/spider-gazelle/bindata.git
-    version: 1.9.0
+    version: 1.9.1
 
   carbon:
     git: https://github.com/luckyframework/carbon.git
-    version: 0.1.4
+    version: 0.2.0
+
+  carbon_sendgrid_adapter:
+    git: https://github.com/luckyframework/carbon_sendgrid_adapter.git
+    version: 0.1.0
 
   cmark:
     git: https://github.com/amauryt/cr-cmark-gfm.git
-    version: 0.1.0+git.commit.4dd681983e6fe10c5e44ef7f38ed94e8a7a9b147
+    version: 0.1.0+git.commit.78142e87edb9747bdd904f70732786074a0a82b2
 
   cry:
     git: https://github.com/luckyframework/cry.git
@@ -40,17 +48,13 @@ shards:
     git: https://github.com/luckyframework/dexter.git
     version: 0.3.3
 
-  dotenv:
-    git: https://github.com/gdotdesign/cr-dotenv.git
-    version: 1.0.0
-
   exception_page:
     git: https://github.com/crystal-loot/exception_page.git
-    version: 0.1.5
+    version: 0.2.0
 
   future:
     git: https://github.com/crystal-community/future.cr.git
-    version: 1.0.0+git.commit.9fe168418c6884cb3552c13b004763eb4815ceb9
+    version: 1.0.0
 
   habitat:
     git: https://github.com/luckyframework/habitat.git
@@ -62,7 +66,11 @@ shards:
 
   lucky:
     git: https://github.com/luckyframework/lucky.git
-    version: 0.27.2
+    version: 0.28.0
+
+  lucky_env:
+    git: https://github.com/luckyframework/lucky_env.git
+    version: 0.1.3
 
   lucky_flow:
     git: https://github.com/luckyframework/lucky_flow.git
@@ -70,7 +78,7 @@ shards:
 
   lucky_router:
     git: https://github.com/luckyframework/lucky_router.git
-    version: 0.4.2
+    version: 0.5.0
 
   lucky_task:
     git: https://github.com/luckyframework/lucky_task.git
@@ -78,15 +86,15 @@ shards:
 
   noir:
     git: https://github.com/makenowjust/noir.git
-    version: 0.1.0+git.commit.90925634645f529432ae32e65dc48ef9a19aef80
+    version: 0.1.0+git.commit.2508cdec22f4ec61e87a19d9ec563b99c0faa1f0
 
   openssl_ext:
     git: https://github.com/spider-gazelle/openssl_ext.git
-    version: 2.1.4
+    version: 2.1.5
 
   pg:
     git: https://github.com/will/crystal-pg.git
-    version: 0.23.2
+    version: 0.24.0
 
   pulsar:
     git: https://github.com/luckyframework/pulsar.git
@@ -102,7 +110,7 @@ shards:
 
   teeplate:
     git: https://github.com/luckyframework/teeplate.git
-    version: 0.8.3
+    version: 0.8.4
 
   webdrivers:
     git: https://github.com/matthewmcgarvey/webdrivers.cr.git
@@ -110,5 +118,5 @@ shards:
 
   wordsmith:
     git: https://github.com/luckyframework/wordsmith.git
-    version: 0.2.2
+    version: 0.3.0
 

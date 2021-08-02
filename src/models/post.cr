@@ -63,7 +63,7 @@ end
 
 class Post < BaseModel
 
-  avram_enum Lang do
+  enum Lang
     Fr # 0
     En # 1
   end

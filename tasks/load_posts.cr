@@ -22,9 +22,9 @@ class LoadPosts < LuckyTask::Task
   def call
     case lang
     when "en"
-      posts_lang = Post::Lang.new(:en)
+      posts_lang = Post::Lang::En
     else
-      posts_lang = Post::Lang.new(:fr)
+      posts_lang = Post::Lang::Fr
     end
 
     new_posts = {} of String => (Hash(String, String))

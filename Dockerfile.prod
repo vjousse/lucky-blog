@@ -21,11 +21,11 @@ COPY ./webpack.mix.js /app/
 WORKDIR /app
 
 RUN shards install
+COPY ./yarn.lock /app/
+RUN yarn install
+RUN yarn prod
 RUN cd /app && crystal build --release src/start_server.cr
 
 EXPOSE 5000
 
-COPY ./yarn.lock /app/
-RUN yarn install
-RUN yarn prod
 CMD ["/app/start_server"]

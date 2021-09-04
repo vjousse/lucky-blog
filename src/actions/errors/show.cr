@@ -50,7 +50,7 @@ class Errors::Show < Lucky::ErrorAction
 
   private def error_html(message : String, status : Int)
     context.response.status_code = status
-    html Errors::ShowPage, message: message, status: status
+    html Errors::ShowPage, status, message: message, status: status
   end
 
   private def error_json(message : String, status : Int, details = nil, param = nil)

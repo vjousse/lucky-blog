@@ -13,6 +13,12 @@ As I have been struggling to make [Parcel JS](https://v2.parceljs.org/), [Tailwi
 
 <!-- TEASER_END -->
 
+## TL;DR
+
+The final [boilerplate source code is available on Github](https://github.com/vjousse/parcel-tailwindcss-elm-lang-boilerplate).
+
+The bonus version with [elm-spa](https://www.elm-spa.dev/) is also [available on Github in the elm-spa branch](https://github.com/vjousse/parcel-tailwindcss-elm-lang-boilerplate/tree/elm-spa).
+
 ## Why?
 
 My initial need was: using __Taiwind CSS__ with __Elm Lang__ and __Elm Spa__. It quickly turned into a journey through the classical [Javascript fatigue](https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4) tools and my new need was: find something that just get the job done. Spoiler: it's the case with __Parcel JS__.
@@ -38,12 +44,12 @@ __package.json__
 
 Then just `npm install`.
 
-Then let's create directories for every type of file we're going to have.
+Then let's create directories for every type of file we're going to have (`src/` will contain the elm files):
 
 ```
 .
 ├── css
-├── elm
+├── src
 ├── html
 └── js
 ```
@@ -191,13 +197,13 @@ First, install the latest Elm version with npm:
 npm install -D elm@latest-0.19.1
 ```
 
-Then create an `elm.json` file yourself or let the init script do it for you using `npx elm init`. The most important thing to do is to change the default `source-directories` entry from `src` to `elm` (the directory where we will be putting our elm files). Or if you prefer to use the defaults, rename your `elm` directory to `src` and you will be good to go. Here is my `elm.json` file:
+Then create an `elm.json` file yourself or let the init script do it for you using `npx elm init`. Here is my `elm.json` file:
 
 ```json
 {
     "type": "application",
     "source-directories": [
-        "elm"
+        "src"
     ],
     "elm-version": "0.19.1",
     "dependencies": {
@@ -221,7 +227,7 @@ Then create an `elm.json` file yourself or let the init script do it for you usi
 
 ```
 
-Then create a `Main.elm` file in your `elm` directory with the following content:
+Then create a `Main.elm` file in your `src` directory with the following content:
 
 ```elm
 module Main exposing (..)
@@ -293,7 +299,7 @@ And include your Elm program inside your javascript.
 __js/app.js__
 
 ```javascript
-import { Elm } from '../elm/Main.elm';
+import { Elm } from '../src/Main.elm';
 
 Elm.Main.init({ node: document.getElementById('myapp') });
 ```
@@ -302,3 +308,94 @@ Run `npm start` and go to [http://localhost:1234/](http://localhost:1234/) you s
 
 ![Parcel Hello World Tailwind Elm](/images/parcel_hello_world_tailwind_elm.png)
 
+## Purging CSS classes
+
+To avoid to include all the unused Tailwind CSS classes in the outputed CSS, configure your `tailwind.config.js` file by adding some directory to the purge entry:
+
+```javascript
+module.exports = {
+  purge: [
+    './src/**/*.elm',
+    './js/app.js',
+    './html/index.html',
+    './css/styles.css',
+  ],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    extend: {},
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
+};
+
+```
+
+You can now build your code and you should find everything you need in the `dist/` folder.
+
+```
+npm run build
+```
+
+The output should be something like that:
+
+```
+> my-program@1.0.0 build
+> parcel build html/index.html
+
+✨ Built in 178ms
+
+dist/index.html               250 B    646ms
+dist/index.96cb94bc.css     3.67 KB    243ms
+dist/index.e73152c4.js     15.89 KB    598ms
+```
+
+## Adding elm-spa
+
+As a little bonus, we will see how to add [elm-spa](https://www.elm-spa.dev/) to our project.
+
+First install the needed dependencies:
+
+```
+npm install -D chokidar-cli elm-spa elm-test npm-run-all
+```
+
+And change the `package.json` to add the scripts below:
+
+```json
+"scripts": {
+  "start": "npm install && npm run build:dev && npm run dev",
+  "test": "elm-test",
+  "test:watch": "elm-test --watch",
+  "build": "run-s build:elm-spa build:elm",
+  "build:dev": "run-s build:elm-spa build:dev:elm",
+  "dev": "run-p dev:elm-spa dev:elm",
+  "build:elm": "parcel build html/index.html",
+  "build:dev:elm": "elm make src/Main.elm --debug --output=public/dist/elm.compiled.js || true",
+  "build:elm-spa": "elm-spa build .",
+  "dev:elm": "parcel html/index.html",
+  "dev:elm-spa": "chokidar elm/ -c \"npm run build:elm-spa\""
+},
+```
+
+This will give you a lot of new commands to play with like `npm run dev`, `npm run build`, and so on.
+
+Delete our example file in `elm/Main.elm` and init `elm-spa` in the current directory using:
+
+```
+npx elm-spa init
+```
+
+Answer yes to init the project. Remove the `public/index.html` that has been created and use the default `Main.elm` from `elm-spa`.
+
+
+```
+mv .elm-spa/defaults/Main.elm src
+```
+
+It should have changed part of your `elm.json` with some new dependencies and new source code directories.
+
+And now, if everything goes well, `npm run build` should work as expected!
+
+The [full code is available on Github](https://github.com/vjousse/parcel-tailwindcss-elm-lang-boilerplate/tree/elm-spa).

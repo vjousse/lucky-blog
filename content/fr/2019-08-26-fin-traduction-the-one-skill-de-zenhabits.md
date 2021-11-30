@@ -32,6 +32,6 @@ Déjà, je suis __fier de moi__. Alors oui, j'ai mis 5 ans à traduire un livre 
 
 Ensuite, je me suis rendu compte que __traduire était bien plus compliqué__ que ce que je pensais. Pour éviter d'y passer trop de temps, j'ai choisi de traduire presque littéralement la façon d'écrire de Léo. Il est clair que ça ne rend pas grand chose en français et que ça aurait mérité une traduction plus en profondeur. Il m'aurait fallu comprendre et digérer ses phrases pour les traduire dans un style plus français. Peut-être la prochaine fois.
 
-J'ai sous estimé le __manque de motivation qu'une tâche mécanique__ comme la traduction pouvait induire sur moi. Il n'y a pas de création, donc ça peut paraitre plus facile, mais moi ça me démoralise au plus au point. Bon à savoir pour la suite ;-)
+J'ai sous estimé le __manque de motivation qu'une tâche mécanique__ comme la traduction pouvait induire sur moi. Il n'y a pas de création, donc ça peut paraitre plus facile, mais moi ça me démoralise au plus haut point. Bon à savoir pour la suite ;-)
 
 Et pour finir sur un point positif : finir cette traduction m'a permis de publier __5 articles en même pas une semaine__, du jamais vu sur ce blog, champagne !

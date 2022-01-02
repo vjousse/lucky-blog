@@ -28,7 +28,7 @@ Init the app/database for the first time
 
 Load posts
 
-    docker-compose exec web lucky load_posts -l fr -d content/en/
+    docker-compose exec web lucky load_posts -l fr -d content/fr/
 
 Start dev server
 

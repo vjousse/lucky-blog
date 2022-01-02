@@ -44,7 +44,7 @@ Et si, finalement, être __adulte et homme__ c'était aussi et surtout __accepte
 - C'était faire de la place à la partie sensible qui nous habite tous.
 - C'était faire de ce monde un monde plus connecté, plus vibrant.
 
-Dans notre société qui prône le succès, la réussite, la startup nation, la domination de l'homme sur la nature, permettre d'être sensible est un vrai acte militant et puissant.
+Dans notre société qui prône le succès, la réussite, la startup nation, la domination de l'Homme sur la nature, permettre d'être sensible est un vrai acte militant et puissant.
 
 Admettre au final qu'__être homme__, c'est aussi et surtout être __sensible et vulnérable__.
 

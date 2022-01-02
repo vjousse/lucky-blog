@@ -35,4 +35,4 @@
 
 <p><p>Et pour vous, <strong>quels sont vos prochains challenges</strong> ? Quand décidérez-vous de finalement sortir de votre zone de confort ? De faire cette chose que vous n'osez pas ? De vivre la dangereuse aventure de votre vie avant que l'ennui mortel ne vous emporte ?</p></p>
 
-<p><p>Hop hop hop, qu'attendez-vous ? C'est maintenant <a href="/blog/comment-passer-a-cote-de-sa-vie-8-excuses-que-vous-regretterez/">ou jamais</a> !</p></p>
+<p><p>Hop hop hop, qu'attendez-vous ? C'est maintenant <a href="/blog/comment-passer-à-côté-de-sa-vie-les-8-excuses-bidon-que-vous-regretterez">ou jamais</a> !</p></p>

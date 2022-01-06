@@ -13,7 +13,7 @@ C'est l'horreur. Il est 10 heures et, comme tous les lundi matin, on fait un dé
 
 William est comme à son habitude heureux d'être là. Il sourit, il glousse. Il a tout simplement l'air idiot. Un peu comme cette réunion en fait.
 <!-- TEASER_END -->
-Qu'est-ce qu'on a fait la semaine dernière, qu'est-ce qu'on compte faire cette semaine, pourquoi on n'a pas fait tout ce qu'on devait faire, comment on compte y remédier, j'en passe et des meilleures. On se branle la nouille, littéralement. J'en ai marre. Les gens en ont marre mais personne ne le dit. Le boss est tellement certain que tout cela sert à quelque chose qu'il ne se rend pas compte de la bêtise du tableau. 
+Qu'est-ce qu'on a fait la semaine dernière, qu'est-ce qu'on compte faire cette semaine, pourquoi on n'a pas fait tout ce qu'on devait faire, comment on compte y remédier, j'en passe et des meilleures. On s'invente une vie et une importance. J'en ai marre. Les gens en ont marre mais personne ne le dit. Le boss est tellement certain que tout cela sert à quelque chose qu'il ne se rend pas compte de la bêtise du tableau. 
 
 Dix personnes dans une même salle en train de faire des plans sur la comète au lieu de se rendre à l'évidence : depuis que les employés ne sont que des « ressources », le travail n'est qu'un moyen de payer ses factures. Le reste, tout le monde s'en fout. On ne travaille pas parce qu'on croit en ce qu'on fait, c'est fini ce temps là. On travaille pour se payer un toit et une place dans la société. 
 
@@ -28,3 +28,7 @@ Comme d'habitude, on a remis les plannings à jour, on a rallongé les deadlines
 J'ai réussi à détester la période que je préférais lorsque que j'étais gamin : celle des crêpes le mercredi, des soirées au coin du feu et des longues heures à attendre le père noël.
 
 Ça ne peut pas être ça la vie. Ça ne doit pas être ça.
+
+<hr>
+
+_Ce texte de fiction est le premier épisode de la série « Une autre vérité ». [La suite ici](blog/fr/une-autre-verite-episode-2)._

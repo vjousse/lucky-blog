@@ -9,7 +9,7 @@
 .. type: text
 -->
 
-_Ce texte de fiction est le deuxième épisode de la série « Une autre vérité ». [Le début est ici](/blog/fr/une-autre-verite-episode-2)._
+_Ce texte de fiction est le deuxième épisode de la série « Une autre vérité ». [Le début est ici](/blog/fr/une-autre-verite-episode-1)._
 <hr>
 
 

@@ -31,4 +31,4 @@ J'ai réussi à détester la période que je préférais lorsque que j'étais ga
 
 <hr>
 
-_Ce texte de fiction est le premier épisode de la série « Une autre vérité ». [La suite ici](blog/fr/une-autre-verite-episode-2)._
+_Ce texte de fiction est le premier épisode de la série « Une autre vérité ». [La suite ici](/blog/fr/une-autre-verite-episode-2)._
